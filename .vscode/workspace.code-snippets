@@ -1,0 +1,51 @@
+{
+    "Create Component documentation": {
+        "prefix": "cdoc",
+        "body": [
+            "/**",
+            " * A ${1:function type (f.e.: component/container/page)} that ${2:has no specific description yet}",
+            " *",
+            " * @param props The standard properties which are always available",
+            " *",
+            " * @returns The `${3:name of the component (function name for example)}` $1",
+            " */"
+        ],
+        "description": "Creates JSDoc documentation about the given component"
+    },
+    "Prop interface": {
+        "prefix": "pdoc",
+        "body": [
+            "/**",
+            " * The property types which are used by the `$1` ${2:function type (f.e.: component/container/page)}",
+            " */"
+        ],
+        "description": "Creates a JSDoc description which indicates the given object uses the declared properties"
+    },
+    "Styles description": {
+        "prefix": "sdoc",
+        "body": [
+            "/**",
+            " * The styles which are used by the `${1:name of the function}` ${2:function type (f.e.:component/container/page)}",
+            " */"
+        ],
+        "description": "Creates a JSDoc description which indicates that these styles are being used by a specific function"
+    },
+    "Default properties": {
+        "prefix": "dpdoc",
+        "body": [
+            "/**",
+            " * The default property values which are used by the `${1:name of the function}` ${2:function type (f.e.:component/container/page)}",
+            " */"
+        ],
+        "description": "Creates a JSDoc description which indicates that these properties contain values that are being used by a specific function"
+    },
+    "Assignment": {
+        "prefix": "adoc",
+        "body": [
+            "/**",
+            " * Assign the ${1:thing to assign} to the `${2:name of the function}` ${3:function type (f.e.:component/container/page)}",
+            " */"
+        ],
+        "description": "Creates a JSDoc description which indicates that something will get assigned to a specific function"
+    }
+}
