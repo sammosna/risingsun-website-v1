@@ -1,0 +1,17 @@
+{
+    "printWidth": 80,
+    "arrowParens": "always",
+    "endOfLine": "lf",
+    "singleQuote": true,
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "useTabs": false,
+    "overrides": [
+        {
+            "files": ["*.html", "*.json", "*.code-snippets"],
+            "options": {
+                "tabWidth": 4
+            }
+        }
+    ]
+}
