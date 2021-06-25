@@ -1,11 +1,12 @@
 import * as React from 'react';
 
+import { Title } from '~components';
+
 function IndexPage() {
   return (
     <main>
-      <title>Index page</title>
       <h1>Test</h1>
-      <p>cool</p>
+      <Title title="I am a title" />
     </main>
   );
 }

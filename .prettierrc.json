@@ -8,7 +8,7 @@
     "useTabs": false,
     "overrides": [
         {
-            "files": ["*.html", "*.json", "*.code-snippets"],
+            "files": ["*.json", "*.code-snippets"],
             "options": {
                 "tabWidth": 4
             }

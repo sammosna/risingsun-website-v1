@@ -21,7 +21,7 @@
     "plugins": ["react", "@typescript-eslint", "import", "prettier"],
     "rules": {
         "@typescript-eslint/no-use-before-define": ["error"],
-        "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
+        "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
         "react/jsx-uses-react": "off",
         "react/react-in-jsx-scope": "off",
         "import/extensions": [
@@ -54,11 +54,9 @@
             }
         ],
         "import/prefer-default-export": "off",
-        "import/no-unresolved": "error",
+        "import/no-unresolved": ["error", { "ignore": ["~[a-z]*"] }],
         "import/no-cycle": [2, { "ignoreExternal": true, "maxDepth": 1 }],
         "prettier/prettier": ["error"],
-        "curly": ["error", "all"],
-        "no-unused-vars": "warn",
         "no-use-before-define": "off"
     }
 }

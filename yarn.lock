@@ -1574,7 +1574,14 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*":
+"@types/react-dom@^17.0.8":
+  version "17.0.8"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.8.tgz#3180de6d79bf53762001ad854e3ce49f36dd71fc"
+  integrity sha512-0ohAiJAx1DAUEcY9UopnfwCE9sSMDGnY/oXjWMax6g3RpzmTt2GMyMVAXcbn0mo8XAff0SbQJl2/SBU+hjSZ1A==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@^17.0.11":
   version "17.0.11"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.11.tgz#67fcd0ddbf5a0b083a0f94e926c7d63f3b836451"
   integrity sha512-yFRQbD+whVonItSk7ZzP/L+gPTJVBkL/7shLEF+i9GC/1cV3JmUxEQz6+9ylhUpWSDuqo1N9qEvqS6vTj4USUA==
@@ -4785,6 +4792,11 @@ gatsby-plugin-page-creator@^3.8.0:
     gatsby-telemetry "^2.8.0"
     globby "^11.0.3"
     lodash "^4.17.21"
+
+gatsby-plugin-root-import@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-root-import/-/gatsby-plugin-root-import-2.0.6.tgz#72f812ce7a16d67773651c7db1d42f68970ae73c"
+  integrity sha512-eG0D+cVL5djVI5nxuQoZE4wBBL6rUq/KBPqPv+69vYolTXzlyj0+vIkqr2Y/xWt8hTK9BB8IOMltGxUmXIenig==
 
 gatsby-plugin-typescript@^3.8.0:
   version "3.8.0"
