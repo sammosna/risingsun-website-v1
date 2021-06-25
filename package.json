@@ -1,0 +1,23 @@
+{
+    "name": "risingsun-website",
+    "version": "1.0.1",
+    "private": true,
+    "description": "risingsun-website",
+    "author": {
+        "name": "RisingSun Team",
+        "url": "TODO",
+        "email": "TODO"
+    },
+    "scripts": {
+        "develop": "gatsby develop",
+        "start": "gatsby develop",
+        "build": "gatsby build",
+        "serve": "gatsby serve",
+        "clean": "gatsby clean"
+    },
+    "dependencies": {
+        "gatsby": "^3.6.2",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1"
+    }
+}
