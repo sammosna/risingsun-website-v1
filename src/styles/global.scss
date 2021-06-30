@@ -1,0 +1,10 @@
+/// Removes padding and margin for all elements to prevent unwanted side-effects
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/// Enables smooth scroll throughout the website
+html {
+  scroll-behavior: smooth;
+}

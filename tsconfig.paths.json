@@ -3,6 +3,9 @@
         "baseUrl": "./src",
         "paths": {
             "~components": ["components"],
+            "~constants": ["constants"],
+            "~containers": ["containers"],
+            "~util": ["util"]
         }
     }
 }

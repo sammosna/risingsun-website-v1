@@ -1,6 +1,6 @@
 {
     "files.eol": "\n",
-    "typescript.preferences.importModuleSpecifier": "project-relative",
+    "typescript.preferences.importModuleSpecifier": "non-relative",
     "editor.detectIndentation": true,
     "editor.formatOnSave": true,
     "editor.tabSize": 2,

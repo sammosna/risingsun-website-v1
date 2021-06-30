@@ -1,16 +1,16 @@
 {
     "name": "risingsun-website",
     "description": "An informational website about the RisingSun token.",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "private": true,
     "repository": {
         "type": "git",
         "url": "ssh://git@github.com:RisingSun-Token/risingsun-website.git"
     },
     "author": {
-        "name": "RisingSunToken Team",
-        "url": "TODO",
-        "email": "TODO"
+        "name": "RisingSunToken",
+        "url": "https://risingsun.finance",
+        "email": "admin@risingsun.finance"
     },
     "scripts": {
         "develop": "gatsby develop",
@@ -19,12 +19,15 @@
         "serve": "gatsby serve",
         "clean": "gatsby clean",
         "lint": "eslint --ext .ts --ext .tsx ./src",
-        "format": "prettier --write \"./src/**/*.{ts,tsx}\""
+        "format": "prettier --write \"./src/**/*.{ts,tsx}\"",
+        "sassdoc": "watch -p \"**/*.scss\" -c \"sassdoc src/\""
     },
     "dependencies": {
         "gatsby": "^3.6.2",
+        "prop-types": "^15.7.2",
         "react": "^17.0.1",
-        "react-dom": "^17.0.1"
+        "react-dom": "^17.0.1",
+        "sass": "^1.35.1"
     },
     "devDependencies": {
         "@types/react": "^17.0.11",
@@ -40,7 +43,10 @@
         "eslint-plugin-react": "^7.24.0",
         "eslint-plugin-react-hooks": "^4.2.0",
         "gatsby-plugin-root-import": "^2.0.6",
+        "gatsby-plugin-sass": "^4.8.0",
         "prettier": "^2.3.1",
-        "typescript": "^4.3.4"
+        "sassdoc": "^2.7.3",
+        "typescript": "^4.3.4",
+        "watch-cli": "^0.2.3"
     }
 }
