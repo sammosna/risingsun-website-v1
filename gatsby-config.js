@@ -11,6 +11,9 @@ module.exports = {
     menuLinks: NAVIGATION_LINKS,
   },
   plugins: [
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-plugin-root-import',
       options: {

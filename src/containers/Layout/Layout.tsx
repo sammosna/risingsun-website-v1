@@ -10,7 +10,7 @@ interface Props {
 }
 
 /**
- * A container that handles the global layout of the application
+ * A container that handles the global layout of the website
  *
  * @returns The `Layout` container
  */

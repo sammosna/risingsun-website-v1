@@ -23,5 +23,9 @@
         },
         "editor.suggest.insertMode": "replace",
         "editor.tabSize": 4
+    },
+    "[sass]": {
+        "editor.tabSize": 4,
+        "editor.formatOnSave": false
     }
 }

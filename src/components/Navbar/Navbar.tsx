@@ -1,6 +1,8 @@
 import * as React from 'react';
 
 import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
+import { Row, Container } from 'react-grid-system';
 
 import * as styles from './Navbar.module.scss';
 
@@ -13,14 +15,36 @@ import { NAVIGATION_LINKS } from '~constants';
  */
 export function Navbar() {
   return (
-    <nav className={styles.navbar}>
-      <ul className={styles.links}>
-        {NAVIGATION_LINKS.map((link) => (
-          <li className={styles.link} key={link.name}>
-            <Link to={link.link}>{link.name}</Link>
-          </li>
-        ))}
-      </ul>
+    <nav className={styles.root}>
+      <Container className={styles.navbar}>
+        <Row justify="between" align="center">
+          <Row className={styles.logo} align="center">
+            <StaticImage
+              className={styles.image}
+              src="../../assets/rsun_logo.svg"
+              alt="RisingSun logo"
+              placeholder="tracedSVG"
+              layout="fixed"
+              width={40}
+              height={40}
+            />
+            <span className={styles.name}>$RSUN</span>
+          </Row>
+          <Row component="ul" className={styles.links}>
+            {NAVIGATION_LINKS.map((link) => (
+              <li className={styles.linkItem} key={link.name}>
+                <Link
+                  state={{ fromFeed: true }}
+                  className={styles.link}
+                  to={link.link}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </Row>
+        </Row>
+      </Container>
     </nav>
   );
 }

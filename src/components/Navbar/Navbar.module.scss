@@ -1,11 +1,60 @@
-.navbar {
+@import '../../styles/colors', '../../styles/util';
+
+/// The root styles of the navigation bar
+.root {
   background-color: rgb(250, 250, 250);
+  width: 100%;
+  position: sticky !important;
+  top: 0;
 
-  .links {
-    background-color: red;
+  /// Styles for the navigation bar
+  .navbar {
+    padding: 8px;
 
-    .link {
-      background-color: blue;
+    /// Styles for the logo wrapper
+    .logo {
+      /// Styles for the navigation bar iamge
+      .image {
+        margin-right: 8px;
+      }
+
+      /// Styles for the name next to the image
+      .name {
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+    }
+
+    /// Styles for the list of links
+    .links {
+      list-style-type: none;
+
+      /// Styles for each link item
+      .linkItem {
+        margin: 0 20px;
+
+        /// Change link color on link item hover
+        &:hover {
+          .link {
+            color: $color_primary;
+            border-bottom: 2px solid $color_primary;
+          }
+        }
+
+        /// Styles for each link
+        .link {
+          color: $text_color_primary;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 1.2rem;
+          font-weight: 600;
+          border-bottom: 10px solid transparent;
+          @include transition(
+            0.25s color ease-in-out,
+            0.25s border ease-in-out
+          );
+        }
+      }
     }
   }
 }
