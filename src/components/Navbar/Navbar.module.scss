@@ -1,4 +1,4 @@
-@import '../../styles/colors', '../../styles/util';
+@import '../../styles/variables', '../../styles/util';
 
 /// The root styles of the navigation bar
 .root {
@@ -11,48 +11,61 @@
   .navbar {
     padding: 8px;
 
-    /// Styles for the logo wrapper
-    .logo {
-      /// Styles for the navigation bar iamge
-      .image {
-        margin-right: 8px;
-      }
+    /// Styles for the navigation bar content
+    .content {
+      @include rowClear;
 
-      /// Styles for the name next to the image
-      .name {
-        font-weight: bold;
-        font-size: 1.5rem;
-      }
-    }
+      /// Styles for the home button (logo and text)
+      .homeButton {
+        text-decoration: none;
+        color: black;
 
-    /// Styles for the list of links
-    .links {
-      list-style-type: none;
+        /// Styles for the logo wrapper
+        .logo {
+          @include rowClear;
 
-      /// Styles for each link item
-      .linkItem {
-        margin: 0 20px;
+          /// Styles for the navigation bar iamge
+          .image {
+            margin-right: 8px;
+          }
 
-        /// Change link color on link item hover
-        &:hover {
-          .link {
-            color: $color_primary;
-            border-bottom: 2px solid $color_primary;
+          /// Styles for the name next to the image
+          .name {
+            font-weight: bold;
+            font-size: 1.5rem;
           }
         }
+      }
 
-        /// Styles for each link
-        .link {
-          color: $text_color_primary;
-          text-decoration: none;
-          text-transform: uppercase;
-          font-size: 1.2rem;
-          font-weight: 600;
-          border-bottom: 10px solid transparent;
-          @include transition(
-            0.25s color ease-in-out,
-            0.25s border ease-in-out
-          );
+      /// Styles for the list of links
+      .links {
+        list-style-type: none;
+
+        /// Styles for each link item
+        .linkItem {
+          margin: 0 20px;
+
+          /// Change link color on link item hover
+          &:hover {
+            .link {
+              color: $color_primary;
+              border-bottom: 2px solid $color_primary;
+            }
+          }
+
+          /// Styles for each link
+          .link {
+            color: $text_color_primary;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-bottom: 10px solid transparent;
+            @include transition(
+              $regular_transiton color ease-in-out,
+              $regular_transiton border ease-in-out
+            );
+          }
         }
       }
     }

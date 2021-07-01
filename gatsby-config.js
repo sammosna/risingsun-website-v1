@@ -20,6 +20,7 @@ module.exports = {
         '~components': path.join(__dirname, 'src/components'),
         '~constants': path.join(__dirname, 'src/constants'),
         '~containers': path.join(__dirname, 'src/containers'),
+        '~hooks': path.join(__dirname, 'src/hooks'),
         '~util': path.join(__dirname, 'src/util'),
       },
     },

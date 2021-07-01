@@ -23,6 +23,9 @@
         "sassdoc": "watch -p \"**/*.scss\" -c \"sassdoc src/\""
     },
     "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.35",
+        "@fortawesome/free-solid-svg-icons": "^5.15.3",
+        "@fortawesome/react-fontawesome": "^0.1.14",
         "gatsby": "^3.6.2",
         "gatsby-plugin-image": "^1.8.0",
         "gatsby-plugin-sharp": "^3.8.0",
