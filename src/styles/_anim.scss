@@ -1,0 +1,13 @@
+@import './util';
+
+/// An animation which rotates an object 360 degrees on it's Z-axis
+@mixin anim-rotate() {
+  @include keyframes(anim-rotate) {
+    0% {
+      transform: rotateZ(0);
+    }
+    100% {
+      transform: rotateZ(359deg);
+    }
+  }
+}
