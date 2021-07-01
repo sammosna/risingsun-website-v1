@@ -60,7 +60,7 @@
             text-transform: uppercase;
             font-size: 1.2rem;
             font-weight: 600;
-            border-bottom: 10px solid transparent;
+            border-bottom: 2px solid transparent;
             @include transition(
               $regular_transiton color ease-in-out,
               $regular_transiton border ease-in-out

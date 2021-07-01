@@ -4,12 +4,19 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Row, Container, Hidden, Visible } from 'react-grid-system';
+import {
+  Row,
+  Container,
+  Hidden,
+  Visible,
+  useScreenClass,
+} from 'react-grid-system';
 
 import * as styles from './Navbar.module.scss';
 
 import { NAVIGATION_LINKS } from '~constants';
 import { useScreenSize, ScreenSizes } from '~hooks';
+import { getLastWord } from '~util';
 
 /**
  * A component that shows navigation options at the top of the page
@@ -17,14 +24,21 @@ import { useScreenSize, ScreenSizes } from '~hooks';
  * @returns The `Navbar` component
  */
 export function Navbar() {
+  const screenClass = useScreenClass();
+
   /**
    * If the screen is small enough to make the container fluid
    */
-  const screenCondition = useScreenSize(ScreenSizes.Large);
+  const shouldBeFluid = useScreenSize(ScreenSizes.Medium);
+
+  /**
+   * If the screen is small enough that short words should be used to prevent screen overflow
+   */
+  const shouldUseShortWords = ['md', 'lg'].some((size) => screenClass === size);
 
   return (
     <nav className={styles.root}>
-      <Container className={styles.navbar} fluid={screenCondition}>
+      <Container className={styles.navbar} fluid={shouldBeFluid}>
         <Row justify="between" align="center" className={styles.content}>
           <Link to="/#" className={styles.homeButton}>
             <Row className={styles.logo} align="center">
@@ -40,7 +54,7 @@ export function Navbar() {
               <span className={styles.name}>$RSUN</span>
             </Row>
           </Link>
-          <Hidden xs sm md>
+          <Hidden xs sm>
             <Row component="ul" className={styles.links}>
               {NAVIGATION_LINKS.map((link) => (
                 <li className={styles.linkItem} key={link.name}>
@@ -49,13 +63,13 @@ export function Navbar() {
                     className={styles.link}
                     to={link.link}
                   >
-                    {link.name}
+                    {shouldUseShortWords ? getLastWord(link.name) : link.name}
                   </Link>
                 </li>
               ))}
             </Row>
           </Hidden>
-          <Visible xs sm md>
+          <Visible xs sm>
             <FontAwesomeIcon icon={faBars} size="2x" />
           </Visible>
         </Row>
