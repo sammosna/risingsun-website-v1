@@ -1,0 +1,14 @@
+/// A function that helps setting cross-browser transitions
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+/// Fix row double negative margin
+@mixin rowClear() {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}

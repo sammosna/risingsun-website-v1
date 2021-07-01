@@ -5,8 +5,6 @@
             "/**",
             " * A ${1:function type (f.e.: component/container/page)} that ${2:has no specific description yet}",
             " *",
-            " * @param props The standard properties which are always available",
-            " *",
             " * @returns The `${3:name of the component (function name for example)}` $1",
             " */"
         ],

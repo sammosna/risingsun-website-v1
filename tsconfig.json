@@ -14,7 +14,10 @@
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "removeComments": true,
-        "preserveConstEnums": true
+        "preserveConstEnums": true,
+        "resolveJsonModule": true,
+        "allowJs": true
     },
-    "include": ["./src/**/*"]
+    "include": ["./src/**/*", "content/website/config/navigation-links.js"],
+    "exclude": ["node_modules", "public", ".cache", "sassdoc"]
 }

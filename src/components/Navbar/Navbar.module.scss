@@ -1,0 +1,73 @@
+@import '../../styles/variables', '../../styles/util';
+
+/// The root styles of the navigation bar
+.root {
+  background-color: rgb(250, 250, 250);
+  width: 100%;
+  position: sticky !important;
+  top: 0;
+
+  /// Styles for the navigation bar
+  .navbar {
+    padding: 8px;
+
+    /// Styles for the navigation bar content
+    .content {
+      @include rowClear;
+
+      /// Styles for the home button (logo and text)
+      .homeButton {
+        text-decoration: none;
+        color: black;
+
+        /// Styles for the logo wrapper
+        .logo {
+          @include rowClear;
+
+          /// Styles for the navigation bar iamge
+          .image {
+            margin-right: 8px;
+          }
+
+          /// Styles for the name next to the image
+          .name {
+            font-weight: bold;
+            font-size: 1.5rem;
+          }
+        }
+      }
+
+      /// Styles for the list of links
+      .links {
+        list-style-type: none;
+
+        /// Styles for each link item
+        .linkItem {
+          margin: 0 20px;
+
+          /// Change link color on link item hover
+          &:hover {
+            .link {
+              color: $color_primary;
+              border-bottom: 2px solid $color_primary;
+            }
+          }
+
+          /// Styles for each link
+          .link {
+            color: $text_color_primary;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-bottom: 2px solid transparent;
+            @include transition(
+              $regular_transiton color ease-in-out,
+              $regular_transiton border ease-in-out
+            );
+          }
+        }
+      }
+    }
+  }
+}
