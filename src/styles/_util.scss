@@ -7,7 +7,7 @@
   transition: $args;
 }
 
-/// Fix row double negative margin
+/// A function that force clears margin left and right
 @mixin mx-clear() {
   margin-left: 0 !important;
   margin-right: 0 !important;
