@@ -56,7 +56,7 @@ export function Navbar() {
             </Row>
           </Hidden>
           <Visible xs sm md>
-            <FontAwesomeIcon icon={faBars} size="lg" />
+            <FontAwesomeIcon icon={faBars} size="2x" />
           </Visible>
         </Row>
       </Container>
