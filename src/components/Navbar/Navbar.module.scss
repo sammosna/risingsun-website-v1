@@ -1,19 +1,24 @@
 @import '../../styles/variables', '../../styles/util';
 
-/// The root styles of the navigation bar
-.root {
+/// Styles for the navigation bar
+.navbar {
   background-color: rgb(250, 250, 250);
   width: 100%;
   position: sticky !important;
   top: 0;
+  z-index: 100;
+  @include transition(box-shadow 0.3s ease-in-out);
+  &.shadow {
+    @include box-shadow(20px, 0, 30px, rgba($color: #111, $alpha: 0.3));
+  }
 
-  /// Styles for the navigation bar
-  .navbar {
+  /// Styles for the navigation bar wrapper
+  .wrapper {
     padding: 8px;
 
     /// Styles for the navigation bar content
     .content {
-      @include rowClear;
+      @include mx-clear;
 
       /// Styles for the home button (logo and text)
       .homeButton {
@@ -22,7 +27,7 @@
 
         /// Styles for the logo wrapper
         .logo {
-          @include rowClear;
+          @include mx-clear;
 
           /// Styles for the navigation bar iamge
           .image {

@@ -1,0 +1,94 @@
+@import '../../styles/variables', '../../styles/util', '../../styles/anim';
+
+/// The size which is used for the responsiveness of the logo and circles
+$base_size: 25%;
+
+/// Styles for the jumbotron
+.jumbotron {
+  background-color: $color_secondary;
+  height: 50vw;
+  max-height: 500px;
+  @include mx-clear;
+
+  /// Styles for the logo
+  .logo {
+    position: absolute;
+    width: $base_size;
+    max-width: 250px;
+  }
+
+  /// Styles for the circle collection
+  .circles {
+    width: 100%;
+    height: inherit;
+    max-height: inherit;
+    position: absolute;
+    overflow: hidden;
+    @include mx-clear;
+
+    /// Styles for each circle
+    .circle {
+      opacity: 0.3;
+      position: absolute;
+
+      /// Loop through each circle and make it responsive
+      @for $i from 0 through 7 {
+        /// Scale circles down based on order for smaller screens
+        @media screen and (max-width: 1000px) {
+          $subtractor: if($i > 4, 3%, 5%);
+          &:nth-of-type(#{$i}) {
+            width: $i * ($base_size - $subtractor);
+          }
+        }
+      }
+
+      /// Make each circle rotate
+      @include anim-rotate;
+
+      /// Rotate each odd circle counter-clockwise
+      &:nth-of-type(odd) {
+        @include animation(anim-rotate 16s linear infinite reverse);
+      }
+
+      /// Rotate each even circle clockwise
+      &:nth-of-type(even) {
+        @include animation(anim-rotate 16s linear infinite);
+      }
+    }
+  }
+
+  /// Styles for the landscape at the bottom of the jumbotron
+  .landscape {
+    width: 100%;
+    position: absolute;
+    align-self: flex-end;
+    @include mx-clear;
+
+    /// Styles for the tori placed on the landscape
+    .tori {
+      position: absolute;
+      width: 7%;
+      max-width: 100px;
+      margin-left: 10%;
+      margin-bottom: 3%;
+      align-self: flex-end;
+    }
+
+    /// Styles for the warrior placed on the landscape
+    .warrior {
+      position: absolute;
+      right: 0;
+      width: 6%;
+      max-width: 100px;
+      margin-right: 6.5%;
+      margin-bottom: 2.2%;
+      align-self: flex-end;
+      transform: rotateZ(-10deg);
+    }
+
+    /// Styles for the mountain at the bottom of the jumbotron which entities are placed on
+    .mountain {
+      width: 100%;
+    }
+  }
+}

@@ -3,7 +3,6 @@ import * as React from 'react';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
 import {
   Row,
   Container,
@@ -26,28 +25,24 @@ import { getLastWord } from '~util';
 export function Navbar() {
   const screenClass = useScreenClass();
 
-  /**
-   * If the screen is small enough to make the container fluid
-   */
-  const shouldBeFluid = useScreenSize(ScreenSizes.Medium);
+  /** If the screen is small enough to make the container fluid */
+  const isScreenSmall = useScreenSize(ScreenSizes.Medium);
 
-  /**
-   * If the screen is small enough that short words should be used to prevent screen overflow
-   */
-  const shouldUseShortWords = ['md', 'lg'].some((size) => screenClass === size);
+  /** If the screen is small enough that short words should be used to prevent screen overflow  */
+  const isScreenMediumOrLarge = [ScreenSizes.Medium, ScreenSizes.Large].some(
+    (size) => screenClass === size,
+  );
 
   return (
-    <nav className={styles.root}>
-      <Container className={styles.navbar} fluid={shouldBeFluid}>
+    <nav className={styles.navbar}>
+      <Container className={styles.wrapper} fluid={isScreenSmall}>
         <Row justify="between" align="center" className={styles.content}>
           <Link to="/#" className={styles.homeButton}>
             <Row className={styles.logo} align="center">
-              <StaticImage
+              <img
                 className={styles.image}
-                src="../../assets/rsun_logo.svg"
+                src="rsun_logo.svg"
                 alt="RisingSun logo"
-                placeholder="tracedSVG"
-                layout="fixed"
                 width={40}
                 height={40}
               />
@@ -63,7 +58,7 @@ export function Navbar() {
                     className={styles.link}
                     to={link.link}
                   >
-                    {shouldUseShortWords ? getLastWord(link.name) : link.name}
+                    {isScreenMediumOrLarge ? getLastWord(link.name) : link.name}
                   </Link>
                 </li>
               ))}
