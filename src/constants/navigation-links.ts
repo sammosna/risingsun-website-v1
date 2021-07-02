@@ -3,7 +3,7 @@ import navigationLinks from '../../content/website/navigation-links.json';
 /**
  * The way a link item should be structured
  */
-export type LinkItem = {
+type LinkItem = {
   name: string;
   link: string;
 };

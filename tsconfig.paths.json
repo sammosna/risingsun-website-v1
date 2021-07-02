@@ -6,6 +6,7 @@
             "~constants": ["constants"],
             "~containers": ["containers"],
             "~hooks": ["hooks"],
+            "~sections": ["sections"],
             "~util": ["util"]
         }
     }

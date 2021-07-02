@@ -37,7 +37,7 @@
           /// Styles for the name next to the image
           .name {
             font-weight: bold;
-            font-size: 1.5rem;
+            font-size: 18pt;
           }
         }
       }
@@ -60,15 +60,15 @@
 
           /// Styles for each link
           .link {
-            color: $text_color_primary;
+            color: $text_color_secondary;
             text-decoration: none;
             text-transform: uppercase;
-            font-size: 1.2rem;
+            font-size: 15pt;
             font-weight: 600;
             border-bottom: 2px solid transparent;
             @include transition(
-              $regular_transiton color ease-in-out,
-              $regular_transiton border ease-in-out
+              $regular_transition_speed color ease-in-out,
+              $regular_transition_speed border ease-in-out
             );
           }
         }

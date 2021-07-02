@@ -14,3 +14,12 @@ export const getLastWord = (text: string) => {
   const words = text.split(/\s/);
   return words[words.length - 1];
 };
+
+/**
+ * Opens a link in a new tab
+ * @param url The link to open
+ */
+export const openInNewTab = (url: string) => {
+  const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+  if (newWindow) newWindow.opener = null;
+};

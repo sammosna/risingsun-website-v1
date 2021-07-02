@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 import { Navbar } from '~components';
 
@@ -11,6 +11,8 @@ interface Props {
 
 /**
  * A container that handles the global layout of the website
+ *
+ * @param props.children The child elements to display
  *
  * @returns The `Layout` container
  */

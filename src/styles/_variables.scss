@@ -6,9 +6,16 @@ $color_primary: #f12827;
 /// The secondary color used throughout the website
 $color_secondary: #fbc597;
 
+/// The tertiary color used throughout the website
+$color_tertiary: #585f7b;
+
 /// The primary color of the text used throughout the website
-$text_color_primary: #1b274a;
+$text_color_primary: #fee9d6;
+
+/// The secondary color of the text used throughout the website
+$text_color_secondary: #1b274a;
 
 /* Timings */
-$rapid_transition: 0.15s;
-$regular_transiton: 0.3s;
+
+/// The speed of a regular transition
+$regular_transition_speed: 0.3s;

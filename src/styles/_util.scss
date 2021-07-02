@@ -7,10 +7,24 @@
   transition: $args;
 }
 
+/// A function that helps setting cross-browser transforms
+@mixin transform($transforms) {
+  -webkit-transform: $transforms;
+  -moz-transform: $transforms;
+  -ms-transform: $transforms;
+  transform: $transforms;
+}
+
 /// A function that force clears margin left and right
 @mixin mx-clear() {
   margin-left: 0 !important;
   margin-right: 0 !important;
+}
+
+/// A function that force clears padding left and right
+@mixin px-clear() {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 /// A function that helps setting cross-browser keyframes
@@ -38,14 +52,14 @@
 }
 
 /// A function that helps setting cross-browser box shadow
-@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+@mixin box-shadow($left, $top, $blur, $color, $inset: false) {
   @if $inset {
-    -webkit-box-shadow: inset $top $left $blur $color;
-    -moz-box-shadow: inset $top $left $blur $color;
-    box-shadow: inset $top $left $blur $color;
+    -webkit-box-shadow: inset $left $top $blur $color;
+    -moz-box-shadow: inset $left $top $blur $color;
+    box-shadow: inset $left $top $blur $color;
   } @else {
-    -webkit-box-shadow: $top $left $blur $color;
-    -moz-box-shadow: $top $left $blur $color;
-    box-shadow: $top $left $blur $color;
+    -webkit-box-shadow: $left $top $blur $color;
+    -moz-box-shadow: $left $top $blur $color;
+    box-shadow: $left $top $blur $color;
   }
 }

@@ -83,7 +83,7 @@ $base_size: 25%;
       margin-right: 6.5%;
       margin-bottom: 2.2%;
       align-self: flex-end;
-      transform: rotateZ(-10deg);
+      @include transform(rotateZ(-10deg));
     }
 
     /// Styles for the mountain at the bottom of the jumbotron which entities are placed on

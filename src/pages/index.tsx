@@ -1,8 +1,7 @@
-import * as React from 'react';
+import React from 'react';
 
 import { Jumbotron } from '~components';
-import { NAVIGATION_LINKS } from '~constants';
-import { parseElementId } from '~util';
+import { InfoSection } from '~sections';
 
 /**
  * A page that displays the visitor content on their first visit
@@ -14,19 +13,7 @@ function IndexPage() {
     <main>
       <title>RisingSun | Stay Updated</title>
       <Jumbotron />
-      {NAVIGATION_LINKS.map((link, index) => (
-        <section
-          key={link.link}
-          id={parseElementId(link.link)}
-          style={{
-            backgroundColor: `rgba(0,0,0,${(index + 1) / 5})`,
-            color: 'red',
-            height: 1000,
-          }}
-        >
-          Section: {link.name}
-        </section>
-      ))}
+      <InfoSection />
     </main>
   );
 }

@@ -1,0 +1,68 @@
+@import '../../styles/variables', '../../styles/util';
+
+$button_shadow_distance: 0.3rem;
+
+@function get_button_shadow_color($color: $color_primary) {
+  @return darken($color, 30);
+}
+
+/// Styles for the button component
+.button {
+  padding: 6px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  background-color: $color_primary;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  @include box-shadow(0, $button_shadow_distance, 0, get_button_shadow_color());
+  @include transition(
+    box-shadow $regular_transition_speed ease-in-out,
+    transform $regular_transition_speed ease-in-out
+  );
+
+  /// Hover effect for the button
+  &:hover {
+    transform: translateY($button_shadow_distance);
+    @include box-shadow(0, 0, 0, get_button_shadow_color());
+  }
+
+  /// Styles for the secondary version of the button
+  &.secondary {
+    background-color: $color_tertiary;
+    @include box-shadow(
+      0,
+      $button_shadow_distance,
+      0,
+      get_button_shadow_color($color_tertiary)
+    );
+
+    /// Hover effect for the secondary version of the button
+    &:hover {
+      @include box-shadow(0, 0, 0, get_button_shadow_color($color_tertiary));
+    }
+  }
+
+  /// Styles for the button image
+  .image {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+  }
+
+  /// Styles for the button icon
+  .icon {
+    font-size: 1.2rem;
+    color: white;
+    margin-right: 0.5rem;
+  }
+
+  /// Styles for the button text
+  .text {
+    font-weight: 600;
+    color: white;
+    font-size: 1.2rem;
+  }
+}

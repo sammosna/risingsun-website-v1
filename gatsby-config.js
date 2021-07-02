@@ -21,6 +21,7 @@ module.exports = {
         '~constants': path.join(__dirname, 'src/constants'),
         '~containers': path.join(__dirname, 'src/containers'),
         '~hooks': path.join(__dirname, 'src/hooks'),
+        '~sections': path.join(__dirname, 'src/sections'),
         '~util': path.join(__dirname, 'src/util'),
       },
     },
