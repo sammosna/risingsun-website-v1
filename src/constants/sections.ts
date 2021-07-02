@@ -21,10 +21,10 @@ export type BasicSection = Section & {
  */
 export type CardSection = Section & {
   items: {
-    iconName: string;
+    icon: string;
     title: string;
     description: string[];
-  };
+  }[];
 };
 
 /**

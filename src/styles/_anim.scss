@@ -4,10 +4,10 @@
 @mixin anim-rotate() {
   @include keyframes(anim-rotate) {
     0% {
-      transform: rotateZ(0);
+      @include transform(rotateZ(0));
     }
     100% {
-      transform: rotateZ(359deg);
+      @include transform(rotateZ(359deg));
     }
   }
 }

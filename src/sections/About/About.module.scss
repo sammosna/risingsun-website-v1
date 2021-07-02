@@ -1,0 +1,58 @@
+@import '../../styles/variables', '../../styles/util';
+
+/// Styles for the about section
+.aboutSection {
+  background-color: #323441;
+  padding-top: 2%;
+  @include transform(translateY(-3px));
+  @include mx-clear;
+
+  /// Styles for the landscape which objects will be placed on
+  .landscape {
+    position: absolute;
+    transform: translateY(-8.9vw);
+    align-self: flex-start;
+    width: 100%;
+    @include mx-clear;
+
+    /// Styles for the katana on top of the mountain
+    .katana {
+      position: absolute;
+      right: 0;
+      width: 15%;
+      margin-right: 19%;
+      margin-bottom: 7%;
+      align-self: flex-end;
+    }
+
+    /// Styles for the mountain on the landscape
+    .mountain {
+      width: 100%;
+    }
+  }
+
+  /// Styles for the section content
+  .content {
+    padding-top: 20px;
+    width: 100%;
+    background-color: #36222e;
+    text-align: center;
+    @include mx-clear;
+
+    /// Styles for the section heading
+    .heading {
+      font-size: 4rem;
+      font-weight: 800;
+      color: white;
+      line-height: 3rem;
+    }
+
+    /// Styles for the section subtitle
+    .subtitle {
+      font-size: 2.2rem;
+      font-weight: 700;
+      font-style: italic;
+      color: $text_color_primary;
+    }
+  }
+}

@@ -17,5 +17,28 @@
             "",
             "The buybacks are triggered whenever a dip in price occurs. We'll utilize price momentum indicators to fire off smart buybacks and maintain healthy price action."
         ]
+    },
+    "rewards": {
+        "id": "#holder-rewards",
+        "title": "Holder Rewards",
+        "items": [
+            {
+                "icon": "icon_hodl.svg",
+                "title": "Holder Snapshots",
+                "description": ["Diamond-handed holders will get unique NFT's!"]
+            },
+            {
+                "icon": "icon_reduced_tax.svg",
+                "title": "Reduced Tax",
+                "description": [
+                    "For every 2000 holders with minimum xxxxxx tokens, the sell tax is reduced by 1% until the sell tax reaches 8%. The longer you hold, the better sell tax you get."
+                ]
+            },
+            {
+                "icon": "icon_auto_liq.svg",
+                "title": "Auto Reflection",
+                "description": ["2% Reflection means ever-growing wallet size"]
+            }
+        ]
     }
 }

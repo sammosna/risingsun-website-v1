@@ -19,5 +19,9 @@ interface Props {
  * @returns The `Section` component
  */
 export function Section({ id, children }: Props) {
-  return <section id={parseElementId(id)}>{children}</section>;
+  return (
+    <section style={{ width: '100%' }} id={parseElementId(id)}>
+      {children}
+    </section>
+  );
 }
