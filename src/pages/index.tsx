@@ -1,7 +1,7 @@
-import * as React from 'react';
+import React from 'react';
 
 import { Jumbotron } from '~components';
-import { AboutSection } from '~sections';
+import { InfoSection } from '~sections';
 
 /**
  * A page that displays the visitor content on their first visit
@@ -13,7 +13,7 @@ function IndexPage() {
     <main>
       <title>RisingSun | Stay Updated</title>
       <Jumbotron />
-      <AboutSection />
+      <InfoSection />
     </main>
   );
 }

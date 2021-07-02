@@ -67,8 +67,8 @@
             font-weight: 600;
             border-bottom: 2px solid transparent;
             @include transition(
-              $regular_transiton color ease-in-out,
-              $regular_transiton border ease-in-out
+              $regular_transition_speed color ease-in-out,
+              $regular_transition_speed border ease-in-out
             );
           }
         }

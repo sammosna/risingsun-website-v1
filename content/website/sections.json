@@ -1,10 +1,12 @@
 {
-    "welcome": {
-        "id": "#welcome",
+    "about": {
+        "id": "#about",
         "title": "RisingSun",
         "subtitle": "What falls - must rise again",
         "description": [
-            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in."
+            "Amid uncertainty and chaos, only the way of the warrior can triumph. In the fiery pits of the Binance Smart Chain, a token was born: RisingSun.",
+            "With a safe contract and proven tokenomics, RisingSun has all the tenets of the Bushidō code. Featuring an auto buyback mechanism known as the Samurai Engine, everything is in place to uphold the honor of your investment. In a world full of doubts, there is only one certainty: the Rising Sun.",
+            "By joining the RisingSun nation, holders are uniting around an ideal: what falls — must rise again."
         ]
     },
     "engine": {

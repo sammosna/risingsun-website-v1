@@ -1,45 +1,53 @@
-import * as React from 'react';
+import React from 'react';
 
+import { faTelegramPlane as telegramIcon } from '@fortawesome/free-brands-svg-icons';
+import { faTasks as presaleIcon } from '@fortawesome/free-solid-svg-icons';
 import { Container, Row } from 'react-grid-system';
 
 import * as styles from './About.module.scss';
 
-import { Section } from '~components';
-import { BasicSection, getSectionData } from '~constants';
+import { Button, Section } from '~components';
+import { BasicSection, getSectionData, getSiteLink } from '~constants';
+import { openInNewTab } from '~util';
 
+/**
+ * A section that displays information about RisingSun with some buttons
+ *
+ * @returns The `AboutSection` section
+ */
 export function AboutSection() {
-  const welcomeSectionData = getSectionData<BasicSection>('welcome');
-  const engineSectionData = getSectionData<BasicSection>('engine');
+  /** The data for the about section */
+  const sectionData = getSectionData<BasicSection>('about');
+
+  /** A function that handles the clicking of the presale button */
+  const handlePresaleClick = () => openInNewTab(getSiteLink('presale'));
+
+  /** A function that handles the clicking of the telegram button */
+  const handleTelegramClick = () => openInNewTab(getSiteLink('telegram'));
 
   return (
-    <Row component="article" className={styles.aboutSection}>
-      <Row className={styles.landscape}>
-        <img
-          className={styles.katana}
-          src="bg_katana.svg"
-          alt="Katana on mountain"
-        />
-        <img
-          className={styles.mountain}
-          src="bg_mountain_2.svg"
-          alt="About section mountain"
-        />
-      </Row>
-      <Row
-        className={styles.content}
-        justify="center"
-        align="start"
-        direction="column"
-      >
-        <Section id={welcomeSectionData.id}>
-          <Container>
-            <Row justify="center" direction="column">
-              <h1 className={styles.heading}>{welcomeSectionData.title}</h1>
-              <h3 className={styles.subtitle}>Slogan Slogan Slogan</h3>
-            </Row>
-          </Container>
-        </Section>
-      </Row>
-    </Row>
+    <Section id={sectionData.id}>
+      <Container className={styles.section}>
+        <h1 className={styles.heading}>{sectionData.title}</h1>
+        <h3 className={styles.subtitle}>{sectionData.subtitle}</h3>
+        <Row justify="center" align="center" className={styles.actions}>
+          <Button icon={presaleIcon} onClick={handlePresaleClick}>
+            Presale Whitelist
+          </Button>
+          <Button
+            variant="secondary"
+            icon={telegramIcon}
+            onClick={handleTelegramClick}
+          >
+            Telegram
+          </Button>
+        </Row>
+        <span className={styles.paragraph}>
+          {sectionData.description.map((line) => (
+            <p className={styles.line}>{line}</p>
+          ))}
+        </span>
+      </Container>
+    </Section>
   );
 }
