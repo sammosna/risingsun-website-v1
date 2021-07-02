@@ -1,0 +1,21 @@
+{
+    "welcome": {
+        "id": "#welcome",
+        "title": "RisingSun",
+        "subtitle": "What falls - must rise again",
+        "description": [
+            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in."
+        ]
+    },
+    "engine": {
+        "id": "#samurai-engine",
+        "title": "Samurai Engine",
+        "subtitle": "Catchy subtitle",
+        "description": [
+            "The buybacks are triggered whenever a dip in price occurs. We'll utilize price momentum indicators to fire off smart buybacks and maintain healthy price action.",
+            "The buybacks are triggered whenever a dip in price occurs. We'll utilize price momentum indicators to fire off smart buybacks and maintain healthy price action.",
+            "",
+            "The buybacks are triggered whenever a dip in price occurs. We'll utilize price momentum indicators to fire off smart buybacks and maintain healthy price action."
+        ]
+    }
+}
