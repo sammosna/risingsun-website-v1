@@ -18,10 +18,13 @@
 *.jspx eol=lf
 *.properties eol=lf
 *.sh eol=lf
+*.scss eol=lf
 *.tld eol=lf
 *.txt eol=lf
 *.tag eol=lf
 *.tagx eol=lf
+*.ts eol=lf
+*.tsx eol=lf
 *.xml eol=lf
 *.yml eol=lf
 
