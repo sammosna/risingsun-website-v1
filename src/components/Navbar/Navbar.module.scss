@@ -6,7 +6,7 @@
   width: 100%;
   position: sticky !important;
   top: 0;
-  z-index: 100;
+  z-index: 300;
   @include transition(box-shadow 0.3s ease-in-out);
   &.shadow {
     @include box-shadow(20px, 0, 30px, rgba($color: #111, $alpha: 0.3));
@@ -70,6 +70,45 @@
               $regular_transition_speed color ease-in-out,
               $regular_transition_speed border ease-in-out
             );
+          }
+        }
+      }
+
+      /// Styles for the sidebar toggler
+      .toggler {
+        position: absolute;
+        right: 16px;
+        @include transition(
+          transform $regular_transition_speed ease-in-out,
+          opacity $regular_transition_speed ease-in-out
+        );
+
+        /// Styles for the closed sidebar toggler
+        &.togglerClosed {
+          opacity: 1;
+          transform: rotate(0) scale(1);
+          z-index: 102;
+
+          /// Styles for the closed sidebar toggler when applied
+          &.togglerApplied {
+            opacity: 0;
+            transform: rotate(180deg) scale(0);
+            z-index: 101;
+          }
+        }
+
+        /// Styles for the opened sidebar toggler
+        &.togglerOpen {
+          opacity: 0;
+          transform: rotate(-180deg) scale(0);
+          z-index: 101;
+          // color: $color_primary;
+
+          /// Styles for the opened sidebar toggler when applied
+          &.togglerApplied {
+            opacity: 1;
+            transform: rotate(0) scale(1.2);
+            z-index: 102;
           }
         }
       }
