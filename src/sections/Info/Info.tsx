@@ -2,8 +2,11 @@ import React from 'react';
 
 import { Row } from 'react-grid-system';
 
+import katanaAnim from '../../animations/svg_katana.json';
+
 import * as styles from './Info.module.scss';
 
+import { Animate } from '~components';
 import { AboutSection } from '~sections';
 
 /**
@@ -15,11 +18,12 @@ export function InfoSection() {
   return (
     <Row component="article" className={styles.section}>
       <Row className={styles.landscape}>
-        <img
+        {/* <img
           className={styles.katana}
           src="bg_katana.svg"
           alt="Katana on mountain"
-        />
+        /> */}
+        <Animate className={styles.katana} animation={katanaAnim} />
         <img
           className={styles.mountain}
           src="bg_mountain_2.svg"

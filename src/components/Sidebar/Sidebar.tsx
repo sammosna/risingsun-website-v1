@@ -38,6 +38,15 @@ export function Sidebar({ open, closeAction }: Props) {
     if (!isScreenTypeAllowed) closeAction();
   }, [isScreenTypeAllowed]);
 
+  /** Disables scrolling when sidebar is open */
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'visible';
+    }
+  }, [open]);
+
   return (
     <>
       <div

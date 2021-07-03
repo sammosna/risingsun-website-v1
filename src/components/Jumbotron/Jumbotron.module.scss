@@ -13,8 +13,9 @@ $base_size: 25%;
   /// Styles for the logo
   .logo {
     position: absolute;
-    width: $base_size;
-    max-width: 250px;
+    width: $base_size * 0.8;
+    max-width: 300px;
+    z-index: 100;
   }
 
   /// Styles for the circle collection
@@ -31,11 +32,12 @@ $base_size: 25%;
       opacity: 0.3;
       position: absolute;
 
-      /// Loop through each circle and make it responsive
-      @for $i from 0 through 7 {
-        /// Scale circles down based on order for smaller screens
-        @media screen and (max-width: 1000px) {
+      /// Scale circles down based on order for smaller screens
+      @media screen and (max-width: $large_screen + 500px) {
+        /// Loop through each circle and make it responsive
+        @for $i from 0 through 7 {
           $subtractor: if($i > 4, 3%, 5%);
+          $subtractor: if($i == 1, 0, $subtractor);
           &:nth-of-type(#{$i}) {
             width: $i * ($base_size - $subtractor);
           }
