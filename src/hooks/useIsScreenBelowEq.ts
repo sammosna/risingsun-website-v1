@@ -1,23 +1,13 @@
 import { useScreenClass } from 'react-grid-system';
 
-/**
- * The accepted screen sizes
- */
-export enum ScreenSizes {
-  ExtraSmall = 'xs',
-  Small = 'sm',
-  Medium = 'md',
-  Large = 'lg',
-  ExtraLarge = 'xl',
-  ExtraExtraLarge = 'xxl',
-}
+import { ScreenSizes } from './types';
 
 /**
- * A hook that checks if the screen size is within the given screen size scope
+ * A hook that checks if the screen size is smaller than or equal to the given screen size
  * @param screenSize The screen size to check from
  * @returns If the screen size is within the given scope
  */
-export function useScreenSize(screenSize: ScreenSizes): boolean {
+export function useIsScreenBelowEq(screenSize: ScreenSizes): boolean {
   /**
    * The screen class hook
    */

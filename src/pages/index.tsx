@@ -10,11 +10,11 @@ import { InfoSection } from '~sections';
  */
 function IndexPage() {
   return (
-    <main>
+    <>
       <title>RisingSun | Stay Updated</title>
       <Jumbotron />
       <InfoSection />
-    </main>
+    </>
   );
 }
 

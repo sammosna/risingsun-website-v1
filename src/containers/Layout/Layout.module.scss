@@ -1,0 +1,12 @@
+@import '../../styles/variables', '../../styles/util';
+
+/// Styles for the layout content
+.content {
+  transform: translateX(0);
+  @include transition(transform $regular_transition_speed ease-in-out);
+
+  /// Styles for the effect applied to the layout content when sidebar is activated
+  &.sidebarEffect {
+    transform: translateX(-100px);
+  }
+}
