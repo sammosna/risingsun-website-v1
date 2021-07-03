@@ -7,13 +7,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import clsx from 'classnames';
 import { Link } from 'gatsby';
-import {
-  Row,
-  Container,
-  Hidden,
-  Visible,
-  useScreenClass,
-} from 'react-grid-system';
+import { Row, Container, Hidden, Visible } from 'react-grid-system';
 
 import * as styles from './Navbar.module.scss';
 
