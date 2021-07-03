@@ -44,7 +44,9 @@ export function AboutSection() {
         </Row>
         <span className={styles.paragraph}>
           {sectionData.description.map((line) => (
-            <p className={styles.line}>{line}</p>
+            <p key={line} className={styles.line}>
+              {line}
+            </p>
           ))}
         </span>
       </Container>

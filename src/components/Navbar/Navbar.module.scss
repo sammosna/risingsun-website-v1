@@ -6,7 +6,7 @@
   width: 100%;
   position: sticky !important;
   top: 0;
-  z-index: 300;
+  z-index: 1100;
   @include transition(box-shadow 0.3s ease-in-out);
   &.shadow {
     @include box-shadow(20px, 0, 30px, rgba($color: #111, $alpha: 0.3));
@@ -86,29 +86,28 @@
         /// Styles for the closed sidebar toggler
         &.togglerClosed {
           opacity: 1;
-          transform: rotate(0) scale(1);
           z-index: 102;
+          @include transform(rotate(0) scale(1));
 
           /// Styles for the closed sidebar toggler when applied
           &.togglerApplied {
             opacity: 0;
-            transform: rotate(180deg) scale(0);
             z-index: 101;
+            @include transform(rotate(180deg) scale(0));
           }
         }
 
         /// Styles for the opened sidebar toggler
         &.togglerOpen {
           opacity: 0;
-          transform: rotate(-180deg) scale(0);
           z-index: 101;
-          // color: $color_primary;
+          @include transform(rotate(-180deg) scale(0));
 
           /// Styles for the opened sidebar toggler when applied
           &.togglerApplied {
             opacity: 1;
-            transform: rotate(0) scale(1.2);
             z-index: 102;
+            @include transform(rotate(0) scale(1.2));
           }
         }
       }

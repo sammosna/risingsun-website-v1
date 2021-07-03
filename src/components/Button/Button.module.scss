@@ -25,7 +25,7 @@ $button_shadow_distance: 0.3rem;
 
   /// Hover effect for the button
   &:hover {
-    transform: translateY($button_shadow_distance);
+    @include transform(translateY($button_shadow_distance));
     @include box-shadow(0, 0, 0, get_button_shadow_color());
   }
 

@@ -1,18 +1,15 @@
 @import '../../styles/variables', '../../styles/util';
 
-/// Styles for the blur
+/// Styles for the overlay to prevent clicking
 .blur {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background-color: black;
-  opacity: 0;
-  z-index: 150;
-  @include transition(opacity $regular_transition_speed ease-in-out);
+  z-index: -1;
 
-  /// Styles for the blur when it is applied
+  /// Disables interaction
   &.applied {
-    opacity: 0.8;
+    z-index: 1000;
   }
 }
 
@@ -21,15 +18,16 @@
   position: fixed;
   right: 0;
   width: 200px;
-  transform: translateX(210px);
   height: 100vh;
   background-color: white;
   z-index: 200;
+  @include box-shadow(1rem, 0, 3rem, rgba($color: $color_primary, $alpha: 1));
+  @include transform(translateX(210px));
   @include transition(transform $regular_transition_speed ease-in-out);
 
   /// Effects to apply once the sidebar is open
   &.open {
-    transform: translateX(0);
+    @include transform(translateX(0));
   }
 
   /// The style for the link list
