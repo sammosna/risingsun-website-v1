@@ -2,10 +2,9 @@ import React from 'react';
 
 import { Row } from 'react-grid-system';
 
-import logoAnimation from '../../animations/svg_logo.json';
-
 import * as styles from './Jumbotron.module.scss';
 
+import { LogoAnimation } from '~animations';
 import { Animate } from '~components';
 
 /**
@@ -22,8 +21,7 @@ export function Jumbotron() {
   return (
     <Row component="header" className={styles.jumbotron}>
       <Row className={styles.circles} justify="center" align="center">
-        <Animate className={styles.logo} animation={logoAnimation} />
-        {/* <img className={styles.logo} src="rsun_logo.svg" alt="Risingsun Logo" /> */}
+        <Animate className={styles.logo} animation={LogoAnimation} />
         {backgroundCircles.map((num) => (
           <img
             key={num}

@@ -2,6 +2,7 @@
     "compilerOptions": {
         "baseUrl": "./src",
         "paths": {
+            "~animations": ["animations"],
             "~components": ["components"],
             "~constants": ["constants"],
             "~containers": ["containers"],
