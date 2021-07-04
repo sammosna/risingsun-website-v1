@@ -38,7 +38,9 @@ export function EngineSection() {
               style={{ width: isScreenSmall ? '100%' : undefined }}
             >
               {sectionData.description.map((line) => (
-                <p className={styles.line}>{line}</p>
+                <p key={line} className={styles.line}>
+                  {line}
+                </p>
               ))}
             </div>
           </div>

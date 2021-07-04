@@ -1,0 +1,59 @@
+@import '../../styles/variables', '../../styles/util';
+
+/// Styles for the card
+.card {
+  background-color: $text_color_primary;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+
+  /// Make image larger on hover
+  &:hover .wrapper .image {
+    transform: scale(1.2);
+  }
+
+  /// Styles for the wrapper
+  .wrapper {
+    padding: 1.5rem;
+
+    /// Styles for the image
+    .image {
+      width: 6rem;
+      padding: 1rem;
+      margin: 0 auto;
+      @include transition(transform $regular_transition_speed ease-in-out);
+
+      /// Change the image proportions if icons are animated to make them equal size
+      &.animated {
+        width: 8rem;
+        padding: 0;
+      }
+    }
+
+    /// Styles for an animated image
+    .animatedImage {
+      width: 8rem;
+      margin: 0 auto;
+    }
+
+    /// Styles for the title
+    .title {
+      font-weight: 800;
+      color: $text_color_tertiary;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /// Styles for the content
+    .content {
+      text-align: justify;
+
+      /// Styles for each paragraph
+      .paragraph {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        color: $text_color_tertiary;
+      }
+    }
+  }
+}
