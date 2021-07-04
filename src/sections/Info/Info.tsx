@@ -7,7 +7,7 @@ import katanaAnim from '../../animations/svg_katana.json';
 import * as styles from './Info.module.scss';
 
 import { Animate } from '~components';
-import { AboutSection } from '~sections';
+import { AboutSection, EngineSection } from '~sections';
 
 /**
  * A section that contains multiple sections to display information
@@ -18,11 +18,6 @@ export function InfoSection() {
   return (
     <Row component="article" className={styles.section}>
       <Row className={styles.landscape}>
-        {/* <img
-          className={styles.katana}
-          src="bg_katana.svg"
-          alt="Katana on mountain"
-        /> */}
         <Animate className={styles.katana} animation={katanaAnim} />
         <img
           className={styles.mountain}
@@ -37,6 +32,7 @@ export function InfoSection() {
         direction="column"
       >
         <AboutSection />
+        <EngineSection />
       </Row>
     </Row>
   );

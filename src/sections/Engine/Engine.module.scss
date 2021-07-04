@@ -1,0 +1,73 @@
+@import '../../styles/variables', '../../styles/util';
+
+/// Styles for the samurai section
+.section {
+  margin-top: 5rem;
+
+  /// Styles for the section title
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $text_color_primary;
+    margin-bottom: 2rem;
+  }
+
+  /// Styles for the section wrapper
+  .wrapper {
+    @include mx-clear;
+
+    /// Styles for the card
+    .card {
+      width: 100%;
+      max-width: 950px;
+      text-align: left;
+      background-color: $text_color_primary;
+      border-radius: 10px;
+      padding: 3rem 2rem;
+      background-image: url('../../../static/icons/icon_samurai_engine.svg');
+      background-repeat: no-repeat;
+      background-size: 55%;
+      background-position: right -40% center;
+      @include transition(
+        background-position $slow_transition_speed ease-in-out
+      );
+
+      &:hover {
+        background-position: right -45% center;
+      }
+
+      /// Scale image down on smaller screens
+      @media (max-width: 768px) {
+        background-size: 75%;
+        background-position: right -120% center;
+      }
+
+      /// Styles for the card subtitle
+      .subtitle {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 0.8rem;
+        color: $text_color_tertiary;
+      }
+
+      /// Styles for the card content
+      .content {
+        width: 60%;
+        opacity: 0.9;
+        word-wrap: break-word;
+
+        /// Scale content down to make card responsive
+        @media (max-width: 768px) {
+          width: 55%;
+        }
+
+        /// Styles for each line
+        .line {
+          &:not(:first-of-type) {
+            margin-top: 0.4rem;
+          }
+        }
+      }
+    }
+  }
+}
