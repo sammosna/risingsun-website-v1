@@ -29,7 +29,7 @@ export function AboutSection() {
     <Section id={sectionData.id}>
       <Container className={styles.section}>
         <h1 className={styles.heading}>{sectionData.title}</h1>
-        <h3 className={styles.subtitle}>{sectionData.subtitle}</h3>
+        <h2 className={styles.subtitle}>{sectionData.subtitle}</h2>
         <Row justify="center" align="center" className={styles.actions}>
           <Button icon={presaleIcon} onClick={handlePresaleClick}>
             Presale Whitelist

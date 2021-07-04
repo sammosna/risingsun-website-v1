@@ -9,7 +9,7 @@
 
   /// Disables interaction
   &.applied {
-    z-index: 1000;
+    z-index: 150;
   }
 }
 
@@ -21,12 +21,12 @@
   height: 100vh;
   background-color: white;
   z-index: 200;
-  @include box-shadow(1rem, 0, 3rem, rgba($color: $color_primary, $alpha: 1));
   @include transform(translateX(210px));
   @include transition(transform $regular_transition_speed ease-in-out);
 
   /// Effects to apply once the sidebar is open
   &.open {
+    @include box-shadow(1rem, 0, 3rem, rgba($color: $color_primary, $alpha: 1));
     @include transform(translateX(0));
   }
 
