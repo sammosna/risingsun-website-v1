@@ -1,3 +1,5 @@
+@use "sass:math";
+
 /* Colors */
 /// The primary color used throughout the website
 $color_primary: #f12827;
@@ -30,3 +32,7 @@ $medium_screen: 600px;
 
 /// Breakpoint for a large screen
 $large_screen: 1000px;
+
+/* Ratios */
+/// 16 : 9 aspect ratio
+$aspect_ratio_widescreen: math.div(16, 9);
