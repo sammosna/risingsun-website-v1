@@ -23,3 +23,15 @@ export const openInNewTab = (url: string) => {
   const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
   if (newWindow) newWindow.opener = null;
 };
+
+/**
+ * Generates a number between two numbers
+ * @param start The number to start with
+ * @param end The number to range to
+ * @returns A number between the start and end number
+ */
+export const getNumberBetween = (start: number, end: number) => {
+  const min = Math.ceil(start);
+  const max = Math.floor(end);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};

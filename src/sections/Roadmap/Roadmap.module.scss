@@ -1,0 +1,113 @@
+@import '../../styles/variables', '../../styles/util';
+
+/// Styles for the section
+.section {
+  padding-top: 4%;
+  @include transform(translateY(-5.1vw));
+  @include mx-clear;
+
+  /// Styles for the landscape
+  .landscape {
+    width: 100%;
+    position: absolute;
+    align-items: flex-start;
+    @include transform(translateY(-3.9vw));
+    @include mx-clear;
+
+    /// Styles for the mountain
+    .mountain {
+      width: 100%;
+    }
+  }
+
+  /// Styles for the content
+  .content {
+    width: 80%;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    text-align: center;
+    background-color: #191017;
+    @include mx-clear;
+
+    @media (max-width: $extra_large_screen) {
+      width: 100%;
+    }
+
+    /// Styles for the section title
+    .title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: $text_color_primary;
+      margin-bottom: 2rem;
+    }
+
+    /// Styles for the content wrapper
+    .wrapper {
+      @include mx-clear;
+
+      /// Styles for the spacer
+      .spacer {
+        height: 3rem;
+
+        /// Styles for the hidden version of the spacer
+        &.hidden {
+          height: 0;
+        }
+      }
+
+      /// Styles for each phase
+      .phase {
+        padding: 0 2rem !important;
+
+        /// Styles for the phase title
+        .phaseTitle {
+          color: $text_color_primary;
+          font-size: 2rem;
+          font-weight: bold;
+          font-style: italic;
+          text-transform: capitalize;
+          text-align: left;
+        }
+
+        /// Styles for the phase content
+        .phaseContent {
+          width: 100%;
+
+          /// Styles for each phase item
+          .phaseItem {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+
+            &:not(:last-of-type) {
+              border-bottom: 2px dotted rgba($color: white, $alpha: 0.05);
+            }
+
+            /// Styles for each phase text
+            .phaseText {
+              color: $text_color_primary;
+              font-size: 1rem;
+              text-align: left;
+              z-index: 1;
+            }
+
+            /// Styles for the phase background
+            .phaseBackground {
+              position: absolute;
+              object-fit: contain;
+              z-index: 0;
+              @include transform(scale(1.1));
+            }
+
+            /// Styles for each phase check
+            .phaseCheck {
+              width: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
