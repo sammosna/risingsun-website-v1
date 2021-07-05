@@ -7,7 +7,6 @@ import * as styles from './Roadmap.module.scss';
 
 import { Section } from '~components';
 import { CheckedSection, getSectionData } from '~constants';
-import { getNumberBetween } from '~util';
 
 /**
  * A section that displays the roadmap of RisingSun
