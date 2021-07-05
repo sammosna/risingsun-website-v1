@@ -1,0 +1,74 @@
+@use "sass:math";
+@import '../../styles/variables', '../../styles/util';
+
+/// Styles for the section
+.section {
+  background-color: #36222e;
+  padding-top: 4%;
+  @include transform(translateY(-1vw));
+  @include mx-clear;
+
+  @media (max-width: $medium_screen) {
+    padding-top: 1%;
+  }
+
+  /// Styles for the landscape
+  .landscape {
+    width: 100%;
+    position: absolute;
+    align-items: flex-start;
+    @include transform(translateY(-3.9vw));
+    @include mx-clear;
+
+    /// Styles for the mountain
+    .mountain {
+      width: 100%;
+    }
+
+    /// Styles for the warrior
+    .warrior {
+      position: absolute;
+      width: 20%;
+      align-self: flex-end;
+      left: -5%;
+      margin-bottom: 2%;
+    }
+  }
+
+  /// Styles for the content
+  .content {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10rem;
+    text-align: center;
+    background-color: #261822;
+    background-image: url('../../../static/bg_tori_2.svg');
+    background-repeat: no-repeat;
+    background-size: 650px;
+    background-position: right -375px bottom -50px;
+    @include mx-clear;
+
+    @media (max-width: $large_screen) {
+      background-size: 50%;
+      background-position: right -50% bottom;
+    }
+
+    /// Styles for the section title
+    .title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: $text_color_primary;
+      margin-bottom: 2rem;
+    }
+
+    /// Styles for the trailer
+    .trailer {
+      width: 90vw;
+      height: math.div(90vw, $aspect_ratio_widescreen);
+      max-width: 1000px;
+      max-height: math.div(1000px, $aspect_ratio_widescreen);
+      border: 0.6rem solid $text_color_primary;
+      border-radius: 10px;
+    }
+  }
+}
