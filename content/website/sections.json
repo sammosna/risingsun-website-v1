@@ -2,7 +2,7 @@
     "about": {
         "id": "#about",
         "title": "RisingSun",
-        "subtitle": "What falls - must rise again",
+        "subtitle": "What falls — must rise again",
         "description": [
             "Amid uncertainty and chaos, only the way of the warrior can triumph. In the fiery pits of the Binance Smart Chain, a token was born: RisingSun.",
             "With a safe contract and proven tokenomics, RisingSun has all the tenets of the Bushidō code. Featuring an auto buyback mechanism known as the Samurai Engine, everything is in place to uphold the honor of your investment. In a world full of doubts, there is only one certainty: the Rising Sun.",
@@ -14,10 +14,7 @@
         "title": "Samurai Engine",
         "subtitle": "Catchy subtitle",
         "description": [
-            "The buybacks are triggered whenever a dip in price occurs. We'll utilize price momentum indicators to fire off smart buybacks and maintain healthy price action.",
-            "The buybacks are triggered whenever a dip in price occurs. We'll utilize price momentum indicators to fire off smart buybacks and maintain healthy price action.",
-            "",
-            "The buybacks are triggered whenever a dip in price occurs. We'll utilize price momentum indicators to fire off smart buybacks and maintain healthy price action."
+            "The Samurai Engine is the first-ever intelligent buyback system. The engine utilizes price feeds and quantitative trading algorithms to trigger buybacks at dips in price. The engine will help maintain healthy price action, rewarding long-term holders."
         ]
     },
     "rewards": {

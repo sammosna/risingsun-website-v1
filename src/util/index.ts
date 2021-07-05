@@ -35,3 +35,10 @@ export const getNumberBetween = (start: number, end: number) => {
   const max = Math.floor(end);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
+
+/**
+ * A function that checks if a link is external
+ * @param link The link to check
+ * @returns If the link is external
+ */
+export const isExternalLink = (link: string) => link.includes('://');
