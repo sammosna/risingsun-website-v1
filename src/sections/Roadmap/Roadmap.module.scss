@@ -29,6 +29,7 @@
     background-color: #191017;
     @include mx-clear;
 
+    /// Make bigger on smaller screens
     @media (max-width: $extra_large_screen) {
       width: 100%;
     }
