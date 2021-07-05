@@ -42,5 +42,37 @@
                 "description": ["2% Reflection means ever-growing wallet size"]
             }
         ]
+    },
+    "roadmap": {
+        "id": "#roadmap",
+        "title": "Roadmap",
+        "columns": {
+            "phase 1": {
+                "Initiate Presale Whitelist Contest": true,
+                "Telegram with 2000 Members": true,
+                "Influencer Partnerships": false,
+                "Whitelisted Presale": false,
+                "Launch Token on PancakeSwap": false,
+                "Apply for CMC and CG": false,
+                "$1,000,000 Marketcap": false,
+                "Holder snapshots": false,
+                "Techrate Audit": false
+            },
+            "phase 2": {
+                "$5,000,000 Marketcap": false,
+                "$10,000,000 Marketcap": false,
+                "$50,000,000 Marketcap": false,
+                "Lottery DApp": false,
+                "DAO voting DApp to drive buyback strategy": false,
+                "NFT mints for long term holders": false,
+                "10,000 Holders": false,
+                "50,000 Holders": false
+            },
+            "phase 3": {
+                "CEX Listings": false,
+                "NFT Marketplace with partnered artists": false,
+                "$500,000,000 Marketcap": false
+            }
+        }
     }
 }

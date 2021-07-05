@@ -31,9 +31,10 @@ export type CardSection = Section & {
  * A type that describes how a checked items section (i.e. roadmap) should be structured
  */
 export type CheckedSection = Section & {
-  [key: string]: {
-    description: string;
-    checked: boolean;
+  columns: {
+    [key: string]: {
+      [key: string]: boolean;
+    };
   };
 };
 
