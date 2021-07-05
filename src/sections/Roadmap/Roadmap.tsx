@@ -67,7 +67,9 @@ export function RoadmapSection() {
                     const hasCompleted = hasPhaseItemCompleted(column, item);
 
                     /** The number of the stroke to use */
-                    const number = getNumberBetween(1, 3);
+                    let number = 3;
+                    if (item.length > 15 && item.length < 25) number = 2;
+                    if (item.length >= 25) number = 1;
 
                     return (
                       <p className={styles.phaseItem} key={item}>
@@ -75,12 +77,9 @@ export function RoadmapSection() {
                         {hasCompleted && (
                           <img
                             className={styles.phaseBackground}
-                            src={`roadmap_stroke_${
-                              item.length > 25 ? 1 : number
-                            }.svg`}
+                            src={`roadmap_stroke_${number}.svg`}
                             alt="The phase item background"
                             width={item.length * 10}
-                            height={100}
                           />
                         )}
                         <img
