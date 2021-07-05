@@ -36,7 +36,7 @@ export function TrailerSection() {
         align="start"
         direction="column"
       >
-        <Section id="section_video">
+        <Section id="watch-the-trailer">
           <h1 className={styles.title}>Watch the trailer</h1>
           <iframe
             className={styles.trailer}
