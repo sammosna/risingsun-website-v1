@@ -13,7 +13,7 @@ import * as styles from './Navbar.module.scss';
 
 import { NAVIGATION_LINKS } from '~constants';
 import { useIsScreenBelowEq, ScreenSizes, useIsScreenTypeOf } from '~hooks';
-import { getLastWord } from '~util';
+import { getLastWord, isExternalLink } from '~util';
 
 /**
  * The property types which are used by the `Navbar` component
@@ -71,9 +71,24 @@ export function Navbar({
             <Row component="ul" className={styles.links}>
               {NAVIGATION_LINKS.map((link) => (
                 <li className={styles.linkItem} key={link.name}>
-                  <Link className={styles.link} to={link.link}>
-                    {isScreenMediumOrLarge ? getLastWord(link.name) : link.name}
-                  </Link>
+                  {isExternalLink(link.link) ? (
+                    <a
+                      className={styles.link}
+                      href={link.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {isScreenMediumOrLarge
+                        ? getLastWord(link.name)
+                        : link.name}
+                    </a>
+                  ) : (
+                    <Link className={styles.link} to={link.link}>
+                      {isScreenMediumOrLarge
+                        ? getLastWord(link.name)
+                        : link.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </Row>
