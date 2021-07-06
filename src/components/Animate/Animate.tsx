@@ -38,7 +38,11 @@ export function Animate({ animation, className, loop, autoplay }: Props) {
         loop,
         autoplay,
         animationData: animation,
+        rendererSettings: {
+          progressiveLoad: true,
+        },
       });
+      animationRef.current.setSubframe(true);
     }
     return () => {
       if (animationRef.current) {

@@ -24,19 +24,23 @@
             {
                 "icon": "icon_hodl.svg",
                 "title": "Holder Snapshots",
-                "description": ["Diamond-handed holders will get unique NFT's!"]
+                "description": [
+                    "Diamond-handed holders will get unique NFT's! Periodic holder snapshots will differentiate the strong from the weak. Stay tuned for special NFT artwork."
+                ]
             },
             {
                 "icon": "icon_reduced_tax.svg",
                 "title": "Reduced Tax",
                 "description": [
-                    "For every 2000 holders with minimum xxxxxx tokens, the sell tax is reduced by 1% until the sell tax reaches 8%. The longer you hold, the better sell tax you get."
+                    "For every 2000 holders with minimum ~$10 tokens, the sell tax is reduced by 1% until the sell tax reaches 8%. The longer you hold, the better sell tax you get."
                 ]
             },
             {
                 "icon": "icon_auto_liq.svg",
                 "title": "Auto Reflection",
-                "description": ["2% Reflection means ever-growing wallet size"]
+                "description": [
+                    "2% BUSD Reflection means you lock-in gains from holding. Volume makes you only richer. The strong-willed become stronger."
+                ]
             }
         ]
     },
