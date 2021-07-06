@@ -12,7 +12,7 @@ import { Row, Container, Hidden, Visible } from 'react-grid-system';
 import * as styles from './Navbar.module.scss';
 
 import { NAVIGATION_LINKS } from '~constants';
-import { useIsScreenBelowEq, ScreenSizes, useIsScreenTypeOf } from '~hooks';
+import { useIsScreenBelowEq, ScreenSizes } from '~hooks';
 import { getLastWord, isExternalLink } from '~util';
 
 /**
@@ -41,12 +41,6 @@ export function Navbar({
   /** If the screen is small enough to make the container fluid */
   const isScreenSmall = useIsScreenBelowEq(ScreenSizes.Medium);
 
-  /** If the screen is small enough that short words should be used to prevent screen overflow  */
-  const isScreenMediumOrLarge = useIsScreenTypeOf([
-    ScreenSizes.Medium,
-    ScreenSizes.Large,
-  ]);
-
   return (
     <nav
       className={clsx(styles.navbar, {
@@ -67,7 +61,7 @@ export function Navbar({
               <span className={styles.name}>$RSUN</span>
             </Row>
           </Link>
-          <Hidden xs sm>
+          <Hidden xs sm md>
             <Row component="ul" className={styles.links}>
               {NAVIGATION_LINKS.map((link) => (
                 <li className={styles.linkItem} key={link.name}>
@@ -78,22 +72,18 @@ export function Navbar({
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {isScreenMediumOrLarge
-                        ? getLastWord(link.name)
-                        : link.name}
+                      {getLastWord(link.name)}
                     </a>
                   ) : (
                     <Link className={styles.link} to={link.link}>
-                      {isScreenMediumOrLarge
-                        ? getLastWord(link.name)
-                        : link.name}
+                      {getLastWord(link.name)}
                     </Link>
                   )}
                 </li>
               ))}
             </Row>
           </Hidden>
-          <Visible xs sm>
+          <Visible xs sm md>
             <FontAwesomeIcon
               icon={SidebarClosedIcon}
               size="2x"

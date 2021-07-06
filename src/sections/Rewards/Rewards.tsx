@@ -7,6 +7,11 @@ import * as styles from './Rewards.module.scss';
 import { Section, VerticalCard } from '~components';
 import { CardSection, getSectionData } from '~constants';
 
+/**
+ * A section that displays information about the token rewards
+ *
+ * @returns The `RewardsSection` section
+ */
 export function RewardsSection() {
   /** The data for the rewards section */
   const sectionData = getSectionData<CardSection>('rewards');
