@@ -23,6 +23,7 @@ export type CardSection = Section & {
   items: {
     icon: string;
     title: string;
+    subtitle?: string;
     description: string[];
   }[];
 };

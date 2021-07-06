@@ -1,0 +1,54 @@
+@import '../../styles/variables', '../../styles/util';
+
+/// Styles for the section
+.section {
+  background-color: #36222e;
+  padding-top: 2%;
+  @include mx-clear;
+
+  /// Styles for the landscape
+  .landscape {
+    width: 100%;
+    position: absolute;
+    align-items: flex-start;
+    @include transform(translateY(-4.9vw));
+    @include mx-clear;
+
+    /// Styles for the mountain
+    .mountain {
+      width: 100%;
+    }
+  }
+
+  /// Styles for the content
+  .content {
+    width: 80%;
+    padding-bottom: 5rem;
+    text-align: center;
+    max-width: 1300px;
+    @include mx-clear;
+
+    /// Make bigger on smaller screens
+    @media (max-width: $extra_large_screen) {
+      width: 100%;
+    }
+
+    /// Styles for the section title
+    .title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: $text_color_primary;
+      margin-bottom: 2rem;
+    }
+
+    /// Style for the columns
+    .columns {
+      @include mx-clear;
+
+      /// Style for each column
+      .column {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}

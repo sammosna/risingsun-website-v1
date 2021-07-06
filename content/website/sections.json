@@ -75,5 +75,83 @@
                 "$500,000,000 Marketcap": false
             }
         }
+    },
+    "team": {
+        "id": "#team",
+        "title": "Meet The Team",
+        "items": [
+            {
+                "icon": "team_avatar_3",
+                "title": "David",
+                "subtitle": "Founder",
+                "description": [
+                    "Full-time software engineer, part-time shōgun. With five years of experience at Amazon working on core libraries and AWS, there’s a good chance you interact with his code on a daily basis. Contributing to the structure of the modern internet got a little stale for David, so he dipped his toes into the next big thing: blockchain. After founding Blowfish to build DApps for fun, he came up with Rising Sun to put the latest and greatest tokenomics in the space into action."
+                ]
+            },
+            {
+                "icon": "team_avatar_4",
+                "title": "Lat",
+                "subtitle": "Developer",
+                "description": [
+                    "A noble daimyo, and an even better full-stack developer. Innovation, open-mindedness, and honor are some of his strong suits. With more than ten years of programming experience, Lat has mastered the arts of front and back-end development. In search of a quest for glory, he set out into the emergent world of blockchain to make a name for himself. After building DApps for notable projects like Blowfish and Bingus, he accepted the Rising Sun nation’s call to arms."
+                ]
+            },
+            {
+                "icon": "team_avatar_2",
+                "title": "Thijmen",
+                "subtitle": "Developer",
+                "description": [
+                    "Passionate about bushidō and even more passionate about code. As an ashigaru and full-stack developer, Thijmen prides himself on his attention to detail. After starting to code at 14 years old, he set out on his journey to full-stack perfection. With code as disciplined as a samurai, he’s ready to make his mark in crypto. He joined the Rising Sun team in his quest to expand his knowledge and explore Web 3.0 and its possibilities."
+                ]
+            },
+            {
+                "icon": "team_avatar_7",
+                "title": "K",
+                "subtitle": "Designer",
+                "description": [
+                    "A samurai and motion designer that bows to no man. Wandering between clients such as HSBC, Pfizer, and Samsung for ten years has made him a master of his trade. K found a stark but welcome contrast between the corporate and crypto worlds and began delving deeper into the latter. He got involved with Blowfish on a freelance basis and decided to stick around for the promising team. After hearing about Rising Sun, K was sure of its potential and became responsible for the project’s aesthetic vision."
+                ]
+            },
+            {
+                "icon": "team_avatar_0",
+                "title": "Yannic",
+                "subtitle": "Admin",
+                "description": [
+                    "Developer, designer, scholar, warrior. Yannic is a real rōnin of all trades. With years of experience in coding, graphic design, and medical research, he’s got what it takes to bring honor to Rising Sun. In need of his own quest, Yannic scoured the lands in search of glory. He gave up his life as a wanderer and swore allegiance to our glorious nation after being impressed by Rising Sun’s team and core concepts."
+                ]
+            },
+            {
+                "icon": "team_avatar_5",
+                "title": "Freddy",
+                "subtitle": "Admin",
+                "description": [
+                    "A bold sōhei that favors a pen over a katana. Years of experience as a writer have made Freddy a master of the literary arts. After honing his skills in the scientific and creative fields, he made a start in the chaotic world of cryptocurrency. Roaming through the scorched wastes of the Binance Smart Chain sharpened his wits and hardened his spirit. He offered his skills to the shōgun of Rising Sun and now serves with honor as the nation’s top scribe."
+                ]
+            },
+            {
+                "icon": "team_avatar_1",
+                "title": "Gabriele",
+                "subtitle": "Admin",
+                "description": [
+                    "An inquisitive ikkō-ikki always on the search for new horizons. For Gabriele, it’s knowledge or seppuku. In his eagerness for new adventures, he developed a passion for finance and technology. His experience in the engineering field has made him one of our top brains. Gabriele’s thirst for wisdom landed him on the Blowfish team and after hearing of an exciting new project, he pledged allegiance to Rising Sun. As a pillar of the community, he’ll be making sure the sun always shines on our glorious nation."
+                ]
+            },
+            {
+                "icon": "team_avatar_8",
+                "title": "Palu",
+                "subtitle": "Admin",
+                "description": [
+                    "Our resident ninja. As a loyal agent of the shōgun, Palu makes himself known when necessary. He’s a computer science student and financial market enthusiast, making him one of the brains behind Rising Sun. Creeping through the depths of the Binance Smart Chain has made him a veteran of the scene. After serving Blowfish with distinction, he honored our call to arms. He now serves the Rising Sun nation, bringing technical wisdom and innovative marketing strategies to the table."
+                ]
+            },
+            {
+                "icon": "team_avatar_6",
+                "title": "Penguin King",
+                "subtitle": "Admin",
+                "description": [
+                    "High school teacher by day, tsukai-ban by night. Penguin King was hand-picked by the emperor of Rising Sun for his ability to break down tough crypto concepts to newcomers. The perplexing world of cryptocurrency made him want to put his knowledge to the test. Intrigued by Rising Sun’s intricate tokenomics, he embarked on a quest for glory. He now serves honorably by offering his skills up in service to the Rising Sun nation."
+                ]
+            }
+        ]
     }
 }

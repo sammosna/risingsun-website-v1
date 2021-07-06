@@ -1,7 +1,12 @@
 import React from 'react';
 
 import { Jumbotron } from '~components';
-import { InfoSection, RoadmapSection, TrailerSection } from '~sections';
+import {
+  InfoSection,
+  RoadmapSection,
+  TeamSection,
+  TrailerSection,
+} from '~sections';
 
 /**
  * A page that displays the visitor content on their first visit
@@ -16,6 +21,7 @@ function IndexPage() {
       <InfoSection />
       <TrailerSection />
       <RoadmapSection />
+      <TeamSection />
     </>
   );
 }

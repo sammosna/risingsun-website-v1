@@ -43,7 +43,7 @@ export function RoadmapSection() {
         direction="column"
       >
         <Section id="roadmap">
-          <h1 className={styles.title}>{sectionData.title}</h1>
+          <h2 className={styles.title}>{sectionData.title}</h2>
           <Row className={styles.wrapper} justify="center">
             {Object.keys(columns).map((column, index) => (
               <Col
