@@ -18,6 +18,6 @@
         "resolveJsonModule": true,
         "allowJs": true
     },
-    "include": ["./src/**/*", "content/website/config/navigation-links.js"],
-    "exclude": ["node_modules", "public", ".cache", "sassdoc"]
+    "include": ["./src/**/*", "content/**/*"],
+    "exclude": ["node_modules", "public", ".cache", "docs"]
 }
