@@ -99,10 +99,17 @@
               z-index: 0;
               @include transform(scale(1.1));
 
-              @media (min-width: 768px) and (max-width: $extra_large_screen + 400px) {
-                max-width: 20vw;
+              /// Make strokes not hit checkboxes on extra large screens
+              @media (min-width: $extra_large_screen + 300px) {
+                max-width: 19vw;
               }
 
+              /// Make strokes not hit checkboxes on large screens
+              @media (min-width: 768px) and (max-width: $extra_large_screen + 300px) {
+                max-width: 30vw;
+              }
+
+              /// Make strokes not hit checkboxes on mobile
               @media (max-width: 768px) {
                 max-width: 75vw;
               }

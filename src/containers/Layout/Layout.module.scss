@@ -3,15 +3,10 @@
 /// Styles for the layout content
 .content {
   opacity: 1;
-  @include transform(translateX(0));
-  @include transition(
-    transform $regular_transition_speed ease-in-out,
-    opacity $regular_transition_speed ease-in-out
-  );
+  @include transition(opacity $regular_transition_speed ease-in-out);
 
   /// Styles for the effect applied to the layout content when sidebar is activated
   &.sidebarEffect {
     opacity: 0.1;
-    @include transform(translateX(-100px));
   }
 }

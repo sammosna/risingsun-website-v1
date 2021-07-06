@@ -46,12 +46,7 @@ export function RoadmapSection() {
           <h2 className={styles.title}>{sectionData.title}</h2>
           <Row className={styles.wrapper} justify="center">
             {Object.keys(columns).map((column, index) => (
-              <Col
-                key={column}
-                className={styles.phase}
-                xs={12}
-                md={12 / Object.keys(columns).length}
-              >
+              <Col key={column} className={styles.phase} xs={12} md={6} xxl={4}>
                 <Visible xs sm>
                   <div
                     className={clsx(styles.spacer, {
@@ -72,13 +67,13 @@ export function RoadmapSection() {
 
                     return (
                       <p className={styles.phaseItem} key={item}>
-                        <span className={styles.phaseText}>{item}</span>
+                        <p className={styles.phaseText}>{item}</p>
                         {hasCompleted && (
                           <img
                             className={styles.phaseBackground}
                             src={`roadmap_stroke_${number}.svg`}
                             alt="The phase item background"
-                            width={item.length * 10}
+                            width={item.length * 15}
                           />
                         )}
                         <img
