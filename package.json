@@ -20,7 +20,7 @@
         "clean": "gatsby clean",
         "lint": "eslint --ext .ts --ext .tsx ./src",
         "format": "prettier --write \"./src/**/*.{ts,tsx}\"",
-        "doc": "sassdoc src/ -d docs/sass && typedoc src/ --out docs/code"
+        "doc": "rm -rf docs/ && sassdoc src/ -d docs/sass && typedoc src/ --out docs/code && cp templates/docs/* docs/."
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.35",
