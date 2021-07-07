@@ -19,7 +19,11 @@ export function TeamSection() {
   return (
     <Row component="article" className={styles.section} justify="center">
       <Row className={styles.landscape}>
-        <img src="bg_mountain_5.svg" alt="Team section mountain" />
+        <img
+          className={styles.mountain}
+          src="bg_mountain_5.svg"
+          alt="Team section mountain"
+        />
       </Row>
       <Row
         className={styles.content}

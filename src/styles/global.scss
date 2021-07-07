@@ -34,5 +34,7 @@ img {
 
 /// Change P font size for more readability
 p {
-  font-size: 1.5rem !important;
+  @media (max-width: 768px) {
+    font-size: 1.5rem !important;
+  }
 }
