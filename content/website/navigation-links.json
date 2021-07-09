@@ -4,6 +4,10 @@
         "link": "#about"
     },
     {
+        "name": "Tokenomics",
+        "link": "#tokenomics"
+    },
+    {
         "name": "Watch The Trailer",
         "link": "#watch-the-trailer"
     },
@@ -14,10 +18,6 @@
     {
         "name": "Meet the team",
         "link": "#team"
-    },
-    {
-        "name": "Tokenomics",
-        "link": "#tokenomics"
     },
     {
         "name": "Whitepaper",

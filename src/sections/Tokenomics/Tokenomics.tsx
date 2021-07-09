@@ -34,7 +34,7 @@ export function TokenomicsSection() {
         <Section id={sectionData.id}>
           <h2 className={styles.title}>{sectionData.title}</h2>
           <Row justify="center" className={styles.columns}>
-            {sectionData.items.map((item) => (
+            {sectionData.items.map((item, index) => (
               <Col
                 key={item.title}
                 className={styles.column}
@@ -46,6 +46,7 @@ export function TokenomicsSection() {
                   iconPath={`icons/${item.icon}`}
                   title={item.title}
                   description={item.description}
+                  list={index < 2}
                 />
               </Col>
             ))}

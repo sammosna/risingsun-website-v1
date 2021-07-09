@@ -51,6 +51,7 @@
 
       /// Styles for each paragraph
       .paragraph {
+        list-style-type: square;
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
         color: $text_color_tertiary;

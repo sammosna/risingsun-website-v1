@@ -20,10 +20,10 @@ function IndexPage() {
       <title>RisingSun | Stay Updated</title>
       <Jumbotron />
       <InfoSection />
+      <TokenomicsSection />
       <TrailerSection />
       <RoadmapSection />
       <TeamSection />
-      <TokenomicsSection />
     </>
   );
 }
