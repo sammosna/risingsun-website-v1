@@ -40,11 +40,7 @@ export function VerticalCard({ iconPath, title, description }: Props) {
             animation={animation}
           />
         ) : (
-          <img
-            className={styles.image}
-            src={`icons/${iconPath}`}
-            alt={iconPath}
-          />
+          <img className={styles.image} src={iconPath} alt={iconPath} />
         )}
         <h3 className={styles.title}>{title}</h3>
         <span className={styles.content}>

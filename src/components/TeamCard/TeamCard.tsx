@@ -8,7 +8,7 @@ import * as styles from './TeamCard.module.scss';
 interface Props {
   avatarPath: string;
   name: string;
-  job: string;
+  job?: string;
   description: string[];
 }
 
@@ -28,11 +28,11 @@ export function TeamCard({ avatarPath, name, job, description }: Props) {
       <div className={styles.wrapper}>
         <img
           className={styles.image}
-          src={`avatar/${avatarPath}.png`}
+          src={`${avatarPath}`}
           alt={`${name}'s Avatar`}
         />
         <h3 className={styles.name}>{name}</h3>
-        <h4 className={styles.job}>{job}</h4>
+        {job && <h4 className={styles.job}>{job}</h4>}
         <span className={styles.content}>
           {description.map((paragraph) => (
             <p key={paragraph} className={styles.paragraph}>
@@ -44,3 +44,10 @@ export function TeamCard({ avatarPath, name, job, description }: Props) {
     </div>
   );
 }
+
+/**
+ * The default property values which are used by the `TeamCard` component
+ */
+TeamCard.defaultProps = {
+  job: undefined,
+};

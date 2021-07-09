@@ -66,7 +66,7 @@ export function RoadmapSection() {
                     if (item.length >= 25) number = 1;
 
                     return (
-                      <p className={styles.phaseItem} key={item}>
+                      <span className={styles.phaseItem} key={item}>
                         <p className={styles.phaseText}>{item}</p>
                         {hasCompleted && (
                           <img
@@ -87,7 +87,7 @@ export function RoadmapSection() {
                             hasCompleted ? '' : 'not'
                           } completed`}
                         />
-                      </p>
+                      </span>
                     );
                   })}
                 </div>

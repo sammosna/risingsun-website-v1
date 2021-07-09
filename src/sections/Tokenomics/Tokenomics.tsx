@@ -2,26 +2,26 @@ import React from 'react';
 
 import { Col, Row } from 'react-grid-system';
 
-import * as styles from './Team.module.scss';
+import * as styles from './Tokenomics.module.scss';
 
-import { TeamCard, Section } from '~components';
+import { Section, VerticalCard } from '~components';
 import { CardSection, getSectionData } from '~constants';
 
 /**
- * A section that displays information about the team
+ * A section that displays information about the tokenomics
  *
- * @returns The `TeamSection` section
+ * @returns The `TokenomicsSection` section
  */
-export function TeamSection() {
-  /** The data for the team section */
-  const sectionData = getSectionData<CardSection>('team');
+export function TokenomicsSection() {
+  /** The data for the tokenomics section */
+  const sectionData = getSectionData<CardSection>('tokenomics');
 
   return (
     <Row component="article" className={styles.section} justify="center">
       <Row className={styles.landscape}>
         <img
           className={styles.mountain}
-          src="bg_mountain_5.svg"
+          src="bg_mountain_7.svg"
           alt="Team section mountain"
         />
       </Row>
@@ -40,12 +40,11 @@ export function TeamSection() {
                 className={styles.column}
                 xs={12}
                 sm={6}
-                lg={4}
+                md={4}
               >
-                <TeamCard
-                  avatarPath={`avatar/${item.icon}`}
-                  name={item.title}
-                  job={item.subtitle || 'Admin'}
+                <VerticalCard
+                  iconPath={`icons/${item.icon}`}
+                  title={item.title}
                   description={item.description}
                 />
               </Col>
