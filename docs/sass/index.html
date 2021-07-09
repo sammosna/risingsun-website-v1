@@ -1062,6 +1062,7 @@
 
       /// Styles for each paragraph
       .paragraph {
+        list-style-type: square;
         font-family: &#39;Open Sans&#39;, sans-serif;
         font-weight: 600;
         color: $text_color_tertiary;
@@ -1107,6 +1108,7 @@
 
       /// Styles for each paragraph
       .paragraph {
+        list-style-type: square;
         font-family: &#39;Open Sans&#39;, sans-serif;
         font-weight: 600;
         color: $text_color_tertiary;
@@ -1139,12 +1141,14 @@
 
       /// Styles for each paragraph
       .paragraph {
+        list-style-type: square;
         font-family: &#39;Open Sans&#39;, sans-serif;
         font-weight: 600;
         color: $text_color_tertiary;
       }
 }</code>" data-collapsed=".content { ... }"><code>.content { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Styles for the content</p></div></section><section class="main__item container item" id="undefined-css-.paragraph"><h3 class="item__heading"><a class="item__name" href="#css-.paragraph">.paragraph</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.paragraph {
-  font-family: &#39;Open Sans&#39;, sans-serif;
+  list-style-type: square;
+        font-family: &#39;Open Sans&#39;, sans-serif;
         font-weight: 600;
         color: $text_color_tertiary;
 }</code>" data-collapsed=".paragraph { ... }"><code>.paragraph { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Styles for each paragraph</p></div></section><section class="main__item container item" id="undefined-css-.content"><h3 class="item__heading"><a class="item__name" href="#css-.content">.content</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.content {
@@ -2197,6 +2201,7 @@
 }</code>" data-collapsed=".column { ... }"><code>.column { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Style for each column</p></div></section><section class="main__item container item" id="undefined-css-.section"><h3 class="item__heading"><a class="item__name" href="#css-.section">.section</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.section {
   background-color: #323441;
   padding-top: 2%;
+  @include transform(translateY(-0.5rem));
   @include mx-clear;
 
   /// Styles for the landscape
@@ -2204,7 +2209,7 @@
     width: 100%;
     position: absolute;
     align-items: flex-start;
-    @include transform(translateY(-3.4vw) rotateZ(-0.5deg));
+    @include transform(translateY(-3.5vw) rotateZ(-0.5deg));
     @include mx-clear;
 
     /// Styles for the mountain
@@ -2248,7 +2253,7 @@
   width: 100%;
     position: absolute;
     align-items: flex-start;
-    @include transform(translateY(-3.4vw) rotateZ(-0.5deg));
+    @include transform(translateY(-3.5vw) rotateZ(-0.5deg));
     @include mx-clear;
 
     /// Styles for the mountain
@@ -2301,7 +2306,7 @@
 }</code>" data-collapsed=".columns { ... }"><code>.columns { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Style for the columns</p></div></section><section class="main__item container item" id="undefined-css-.column"><h3 class="item__heading"><a class="item__name" href="#css-.column">.column</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.column {
   padding-bottom: 2rem;
 }</code>" data-collapsed=".column { ... }"><code>.column { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Style for each column</p></div></section><section class="main__item container item" id="undefined-css-.section"><h3 class="item__heading"><a class="item__name" href="#css-.section">.section</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.section {
-  background-color: #36222e;
+  background-color: #323441;
   padding-top: 4%;
   @include transform(translateY(-1vw));
   @include mx-clear;
