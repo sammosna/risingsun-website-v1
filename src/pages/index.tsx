@@ -1,6 +1,9 @@
 import React from 'react';
 
+import Helmet from 'react-helmet';
+
 import { Jumbotron } from '~components';
+import { getSeoValue, SEO } from '~constants';
 import {
   InfoSection,
   RoadmapSection,
@@ -17,7 +20,13 @@ import {
 function IndexPage() {
   return (
     <>
-      <title>RisingSun | Stay Updated</title>
+      <Helmet>
+        <title>RisingSun | What Falls — Must Rise Again</title>
+        {Object.keys(SEO).map((key: any) => (
+          <meta name={key} content={getSeoValue(key)} />
+        ))}
+      </Helmet>
+
       <Jumbotron />
       <InfoSection />
       <TokenomicsSection />
