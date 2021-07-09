@@ -41,18 +41,18 @@
     .title {
       font-weight: 800;
       color: $text_color_tertiary;
-      font-size: 1.6rem;
+      font-size: 1.65rem;
       margin-bottom: 0.5rem;
     }
 
     /// Styles for the content
     .content {
-      text-align: justify;
+      text-align: left;
 
       /// Styles for each paragraph
       .paragraph {
         font-family: 'Open Sans', sans-serif;
-        font-weight: 700;
+        font-weight: 600;
         color: $text_color_tertiary;
       }
     }

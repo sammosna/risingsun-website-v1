@@ -5,6 +5,7 @@ import {
   InfoSection,
   RoadmapSection,
   TeamSection,
+  TokenomicsSection,
   TrailerSection,
 } from '~sections';
 
@@ -22,6 +23,7 @@ function IndexPage() {
       <TrailerSection />
       <RoadmapSection />
       <TeamSection />
+      <TokenomicsSection />
     </>
   );
 }

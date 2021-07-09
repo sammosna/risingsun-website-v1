@@ -5,3 +5,4 @@ export { RewardsSection } from './Rewards/Rewards';
 export { TrailerSection } from './Trailer/Trailer';
 export { RoadmapSection } from './Roadmap/Roadmap';
 export { TeamSection } from './Team/Team';
+export { TokenomicsSection } from './Tokenomics/Tokenomics';

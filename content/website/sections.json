@@ -50,7 +50,7 @@
         "columns": {
             "phase 1": {
                 "Initiate Presale Whitelist Contest": true,
-                "Telegram with 2000 Members": true,
+                "Telegram with 5000 Members": true,
                 "Influencer Partnerships": false,
                 "Whitelisted Presale": false,
                 "Launch Token on PancakeSwap": false,
@@ -81,7 +81,7 @@
         "title": "Meet The Team",
         "items": [
             {
-                "icon": "team_avatar_3",
+                "icon": "team_avatar_3.png",
                 "title": "David",
                 "subtitle": "Founder",
                 "description": [
@@ -89,7 +89,7 @@
                 ]
             },
             {
-                "icon": "team_avatar_4",
+                "icon": "team_avatar_4.png",
                 "title": "Lat",
                 "subtitle": "Developer",
                 "description": [
@@ -97,7 +97,7 @@
                 ]
             },
             {
-                "icon": "team_avatar_2",
+                "icon": "team_avatar_2.png",
                 "title": "Thijmen",
                 "subtitle": "Developer",
                 "description": [
@@ -105,7 +105,7 @@
                 ]
             },
             {
-                "icon": "team_avatar_7",
+                "icon": "team_avatar_7.png",
                 "title": "K",
                 "subtitle": "Designer",
                 "description": [
@@ -113,7 +113,7 @@
                 ]
             },
             {
-                "icon": "team_avatar_0",
+                "icon": "team_avatar_0.png",
                 "title": "Yannic",
                 "subtitle": "Admin",
                 "description": [
@@ -121,7 +121,7 @@
                 ]
             },
             {
-                "icon": "team_avatar_5",
+                "icon": "team_avatar_5.png",
                 "title": "Freddy",
                 "subtitle": "Admin",
                 "description": [
@@ -129,7 +129,7 @@
                 ]
             },
             {
-                "icon": "team_avatar_1",
+                "icon": "team_avatar_1.png",
                 "title": "Gabriele",
                 "subtitle": "Admin",
                 "description": [
@@ -137,7 +137,7 @@
                 ]
             },
             {
-                "icon": "team_avatar_8",
+                "icon": "team_avatar_8.png",
                 "title": "Palu",
                 "subtitle": "Admin",
                 "description": [
@@ -145,11 +145,44 @@
                 ]
             },
             {
-                "icon": "team_avatar_6",
+                "icon": "team_avatar_6.png",
                 "title": "Penguin King",
                 "subtitle": "Admin",
                 "description": [
                     "High school teacher by day, tsukai-ban by night. Penguin King was hand-picked by the emperor of Rising Sun for his ability to break down tough crypto concepts to newcomers. The perplexing world of cryptocurrency made him want to put his knowledge to the test. Intrigued by Rising Sun’s intricate tokenomics, he embarked on a quest for glory. He now serves honorably by offering his skills up in service to the Rising Sun nation."
+                ]
+            }
+        ]
+    },
+    "tokenomics": {
+        "id": "#tokenomics",
+        "title": "Tokenomics",
+        "items": [
+            {
+                "icon": "icon_buy_tax.png",
+                "title": "Buy Tax",
+                "description": [
+                    "2% BUSD Reflection",
+                    "3% Samurai Engine Buyback",
+                    "1.5% Autoliquidity",
+                    "1.5% Marketing"
+                ]
+            },
+            {
+                "icon": "icon_sell_tax.png",
+                "title": "Sell Tax",
+                "description": [
+                    "4% BUSD Reflection",
+                    "6% Samurai Engine Buyback",
+                    "3% Autoliquidity",
+                    "3% Marketing"
+                ]
+            },
+            {
+                "icon": "icon_samurai_engine.svg",
+                "title": "Samurai Strike",
+                "description": [
+                    "After each strike from the mighty samurai, the sell tax is doubled and slowly reverts back to it's original state."
                 ]
             }
         ]
