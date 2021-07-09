@@ -7,13 +7,14 @@ const NAVIGATION_LINKS = require('./content/website/navigation-links.json');
  */
 module.exports = {
   siteMetadata: {
-    title: 'risingsun-website',
+    title: 'RisingSun | What Falls - Must Rise Again',
     menuLinks: NAVIGATION_LINKS,
   },
   plugins: [
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-root-import',
       options: {
