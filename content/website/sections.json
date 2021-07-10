@@ -53,9 +53,9 @@
                 "Telegram with 5000 Members": true,
                 "Influencer Partnerships": true,
                 "Whitelisted Presale": true,
-                "Launch Token on PancakeSwap": false,
+                "Launch Token on PancakeSwap": true,
                 "Apply for CMC and CG": false,
-                "$1,000,000 Marketcap": false,
+                "$1,000,000 Marketcap": true,
                 "Holder snapshots": false,
                 "Techrate Audit": false
             },
