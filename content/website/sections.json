@@ -182,7 +182,7 @@
                 "icon": "icon_samurai_engine.svg",
                 "title": "Samurai Strike",
                 "description": [
-                    "After each strike from the mighty samurai, the sell tax is doubled and slowly reverts back to it's original state."
+                    "After each strike from the mighty samurai, the sell tax is increased by 50% and slowly reverts back to it's original state."
                 ]
             }
         ]
