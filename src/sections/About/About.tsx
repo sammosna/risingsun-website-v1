@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { faTelegramPlane as telegramIcon } from '@fortawesome/free-brands-svg-icons';
-import { faTasks as presaleIcon } from '@fortawesome/free-solid-svg-icons';
 import { Container, Row } from 'react-grid-system';
 
 import * as styles from './About.module.scss';
@@ -19,11 +18,14 @@ export function AboutSection() {
   /** The data for the about section */
   const sectionData = getSectionData<BasicSection>('about');
 
-  /** A function that handles the clicking of the presale button */
-  const handlePresaleClick = () => openInNewTab(getSiteLink('presale'));
+  /** A function to handle the pancakeswap link opening */
+  const handlePancakeSwapOpen = () => openInNewTab(getSiteLink('pancakeswap'));
 
-  /** A function that handles the clicking of the telegram button */
-  const handleTelegramClick = () => openInNewTab(getSiteLink('telegram'));
+  /** A function to handle the the bogged link opening */
+  const handleBoggedSwapOpen = () => openInNewTab(getSiteLink('bogged'));
+
+  /** A function to handle the telegram link opening */
+  const handleTelegramOpen = () => openInNewTab(getSiteLink('telegram'));
 
   return (
     <Section id={sectionData.id}>
@@ -31,17 +33,29 @@ export function AboutSection() {
         <h1 className={styles.heading}>{sectionData.title}</h1>
         <h2 className={styles.subtitle}>{sectionData.subtitle}</h2>
         <Row justify="center" align="center" className={styles.actions}>
-          <Button icon={presaleIcon} onClick={handlePresaleClick}>
-            Presale Whitelist
+          <Button
+            variant="pancakeswap"
+            image="pcs_logo.png"
+            onClick={handlePancakeSwapOpen}
+          >
+            PancakeSwap
           </Button>
           <Button
-            variant="secondary"
+            variant="bogged"
+            image="bs_logo.svg"
+            onClick={handleBoggedSwapOpen}
+          >
+            Bogged
+          </Button>
+          <Button
+            variant="telegram"
             icon={telegramIcon}
-            onClick={handleTelegramClick}
+            onClick={handleTelegramOpen}
           >
             Telegram
           </Button>
         </Row>
+        <div className={styles.slippage}>Set slippage to 10% when buying</div>
         <span className={styles.paragraph}>
           {sectionData.description.map((line) => (
             <p key={line} className={styles.line}>

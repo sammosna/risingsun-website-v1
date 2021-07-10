@@ -9,7 +9,12 @@ import * as styles from './Button.module.scss';
 /**
  * The variants of the button which are accepted
  */
-type ButtonVariant = 'primary' | 'secondary';
+type ButtonVariant =
+  | 'primary'
+  | 'secondary'
+  | 'telegram'
+  | 'bogged'
+  | 'pancakeswap';
 
 /**
  * The property types which are used by the `Button` component
@@ -48,6 +53,9 @@ export function Button({
       type="button"
       className={clsx(className, styles.button, {
         [styles.secondary]: variant === 'secondary',
+        [styles.telegram]: variant === 'telegram',
+        [styles.bogged]: variant === 'bogged',
+        [styles.pancakeswap]: variant === 'pancakeswap',
       })}
       onClick={onClick}
     >
