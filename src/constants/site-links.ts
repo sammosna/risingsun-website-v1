@@ -1,10 +1,15 @@
 import siteLinks from '../../content/website/site-links.json';
 
 /**
+ * All the allowed types of links
+ */
+type LinkType = keyof typeof siteLinks;
+
+/**
  * The way a link collection should be structured
  */
 type LinkCollection = {
-  [key: string]: string;
+  [key in LinkType]: string;
 };
 
 /**
@@ -17,4 +22,4 @@ export const SITE_LINKS: LinkCollection = siteLinks;
  * @param linkType The type of the link to retrieve (i.e. 'presale', 'telegram', 'instagram')
  * @returns The link which matches the given key
  */
-export const getSiteLink = (linkType: string) => SITE_LINKS[linkType] || '/#';
+export const getSiteLink = (linkType: LinkType) => SITE_LINKS[linkType] || '/#';
