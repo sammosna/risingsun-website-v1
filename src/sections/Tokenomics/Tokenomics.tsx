@@ -40,7 +40,7 @@ export function TokenomicsSection() {
                 className={styles.column}
                 xs={12}
                 sm={6}
-                md={4}
+                lg={3}
               >
                 <VerticalCard
                   iconPath={`icons/${item.icon}`}

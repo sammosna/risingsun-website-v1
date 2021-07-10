@@ -4,6 +4,7 @@
 .section {
   background-color: #323441;
   padding-top: 2%;
+  padding-bottom: 150px;
   @include transform(translateY(-0.5rem));
   @include mx-clear;
 
