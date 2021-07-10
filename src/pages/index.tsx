@@ -22,8 +22,8 @@ function IndexPage() {
     <>
       <Helmet>
         <title>RisingSun | What Falls — Must Rise Again</title>
-        {Object.keys(SEO).map((key: any) => (
-          <meta name={key} content={getSeoValue(key)} />
+        {Object.keys(SEO).map((type: any) => (
+          <meta key={type} name={type} content={getSeoValue(type)} />
         ))}
       </Helmet>
 

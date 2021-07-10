@@ -51,8 +51,8 @@
             "phase 1": {
                 "Initiate Presale Whitelist Contest": true,
                 "Telegram with 5000 Members": true,
-                "Influencer Partnerships": false,
-                "Whitelisted Presale": false,
+                "Influencer Partnerships": true,
+                "Whitelisted Presale": true,
                 "Launch Token on PancakeSwap": false,
                 "Apply for CMC and CG": false,
                 "$1,000,000 Marketcap": false,
@@ -183,6 +183,13 @@
                 "title": "Samurai Strike",
                 "description": [
                     "After each strike from the mighty samurai, the sell tax is increased by 50% and slowly reverts back to it's original state."
+                ]
+            },
+            {
+                "icon": "icon_wallet.svg",
+                "title": "Team Wallet",
+                "description": [
+                    "Used to fund marketing and development. Locked securely in a contract and vested responsibly for the good of the RisingSun nation."
                 ]
             }
         ]

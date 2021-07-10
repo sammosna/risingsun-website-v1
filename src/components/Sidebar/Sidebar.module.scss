@@ -38,7 +38,7 @@
     .linkItem {
       padding: 0.7rem;
       text-align: right;
-      font-size: 1.8rem;
+      font-size: 1.8rem !important;
       font-weight: 600;
       border-left: 1px solid transparent;
       @include transition(border-left $regular_transition_speed ease-in-out);

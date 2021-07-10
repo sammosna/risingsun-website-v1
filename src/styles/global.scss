@@ -33,7 +33,8 @@ img {
 }
 
 /// Change P font size for more readability
-p {
+p,
+li {
   @media (max-width: 768px) {
     font-size: 1.5rem !important;
   }
