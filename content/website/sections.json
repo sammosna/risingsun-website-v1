@@ -164,7 +164,7 @@
                 "description": [
                     "2% BUSD Reflection",
                     "3% Samurai Engine Buyback",
-                    "1.5% Autoliquidity",
+                    "1.5% Autoliquidity (if liquidity ratio is above 20%, this is converted to buyback tax)",
                     "1.5% Marketing"
                 ]
             },
@@ -174,7 +174,7 @@
                 "description": [
                     "4% BUSD Reflection",
                     "6% Samurai Engine Buyback",
-                    "3% Autoliquidity",
+                    "3% Autoliquidity (if liquidity ratio is above 20%, this is converted to buyback tax)",
                     "3% Marketing"
                 ]
             },
