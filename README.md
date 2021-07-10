@@ -39,7 +39,7 @@ The documentation about the code et cetera used in this website, can be found he
     ```
 
 ## Learn more
-This project is being developed with [GatsbyJS](https://www.gatsbyjs.com/), you can learn more about it by visiting the links below.
+This project is being developed using [GatsbyJS](https://www.gatsbyjs.com/), you can learn more about it by visiting the links below.
 
    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
