@@ -14,8 +14,8 @@
 
   /// Styles for the social links section
   .socialLinks {
-    background-color: $color_primary;
-    color: white;
+    background-color: darken(white, 10%);
+    color: $color_primary;
     text-align: right;
 
     /// Styles for each social link

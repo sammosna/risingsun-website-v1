@@ -45,6 +45,7 @@ export function Navbar({
   sidebarOpenAction,
   sidebarCloseAction,
 }: Props) {
+  /** The links for the social items */
   const [mediumLink, redditLink, telegramLink, tiktokLink, twitterLink] = [
     getSiteLink('medium'),
     getSiteLink('reddit'),
@@ -67,27 +68,27 @@ export function Navbar({
           <FontAwesomeIcon
             icon={MediumIcon}
             onClick={() => openInNewTab(mediumLink)}
-            size={isScreenSmall ? '2x' : '1x'}
+            size={isScreenSmall ? '2x' : 'lg'}
           />
           <FontAwesomeIcon
             icon={RedditIcon}
             onClick={() => openInNewTab(redditLink)}
-            size={isScreenSmall ? '2x' : '1x'}
+            size={isScreenSmall ? '2x' : 'lg'}
           />
           <FontAwesomeIcon
             icon={TelegramIcon}
             onClick={() => openInNewTab(telegramLink)}
-            size={isScreenSmall ? '2x' : '1x'}
+            size={isScreenSmall ? '2x' : 'lg'}
           />
           <FontAwesomeIcon
             icon={TikTokIcon}
             onClick={() => openInNewTab(tiktokLink)}
-            size={isScreenSmall ? '2x' : '1x'}
+            size={isScreenSmall ? '2x' : 'lg'}
           />
           <FontAwesomeIcon
             icon={TwitterIcon}
             onClick={() => openInNewTab(twitterLink)}
-            size={isScreenSmall ? '2x' : '1x'}
+            size={isScreenSmall ? '2x' : 'lg'}
           />
         </Container>
       </div>
