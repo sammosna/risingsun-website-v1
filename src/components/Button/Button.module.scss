@@ -45,6 +45,69 @@ $button_shadow_distance: 0.3rem;
     }
   }
 
+  /// Styles for the telegram version of the button
+  &.pancakeswap {
+    background-color: $external_pancakeswap_color;
+    @include box-shadow(
+      0,
+      $button_shadow_distance,
+      0,
+      get_button_shadow_color($external_pancakeswap_color)
+    );
+
+    /// Hover effect for the telegram version of the button
+    &:hover {
+      @include box-shadow(
+        0,
+        0,
+        0,
+        get_button_shadow_color($external_pancakeswap_color)
+      );
+    }
+  }
+
+  /// Styles for the telegram version of the button
+  &.bogged {
+    background-color: $external_bogged_color;
+    @include box-shadow(
+      0,
+      $button_shadow_distance,
+      0,
+      get_button_shadow_color($external_bogged_color)
+    );
+
+    /// Hover effect for the telegram version of the button
+    &:hover {
+      @include box-shadow(
+        0,
+        0,
+        0,
+        get_button_shadow_color($external_bogged_color)
+      );
+    }
+  }
+
+  /// Styles for the telegram version of the button
+  &.telegram {
+    background-color: $external_telegram_color;
+    @include box-shadow(
+      0,
+      $button_shadow_distance,
+      0,
+      get_button_shadow_color($external_telegram_color)
+    );
+
+    /// Hover effect for the telegram version of the button
+    &:hover {
+      @include box-shadow(
+        0,
+        0,
+        0,
+        get_button_shadow_color($external_telegram_color)
+      );
+    }
+  }
+
   /// Styles for the button image
   .image {
     width: 2rem;

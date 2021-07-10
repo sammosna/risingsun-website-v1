@@ -1,5 +1,7 @@
 {
+    "bogged": "https://bogged.finance/swap?tokenIn=BNB&tokenOut=0x917841c010b3d86ED886F36F2C9807E07a2e3093&slippage=10",
     "medium": "https://medium.com/rising-sun",
+    "pancakeswap": "https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x917841c010b3d86ED886F36F2C9807E07a2e3093",
     "presale": "https://sweepwidget.com/view/26118-m4tqs9a1",
     "reddit": "https://www.reddit.com/r/RisingSunToken",
     "telegram": "https://t.me/risingsun_token",
