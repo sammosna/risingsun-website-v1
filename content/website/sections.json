@@ -54,10 +54,10 @@
                 "Influencer Partnerships": true,
                 "Whitelisted Presale": true,
                 "Launch Token on PancakeSwap": true,
-                "Apply for CMC and CG": false,
+                "Apply for CMC and CG": true,
                 "$1,000,000 Marketcap": true,
                 "Holder snapshots": false,
-                "Techrate Audit": false
+                "Base Techrate Audit": true
             },
             "phase 2": {
                 "$5,000,000 Marketcap": false,
