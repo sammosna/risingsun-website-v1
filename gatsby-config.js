@@ -1,6 +1,7 @@
 const path = require('path');
 
 const NAVIGATION_LINKS = require('./content/website/navigation-links.json');
+const SEO = require('./content/website/seo.json');
 
 /**
  * The configuration file used by Gatsby
@@ -9,6 +10,7 @@ module.exports = {
   siteMetadata: {
     title: 'RisingSun | What Falls - Must Rise Again',
     menuLinks: NAVIGATION_LINKS,
+    ...SEO,
   },
   plugins: [
     'gatsby-plugin-image',
