@@ -58,7 +58,7 @@
                 "$1,000,000 Marketcap": true,
                 "Holder snapshots": false,
                 "Base Techrate Audit": true,
-                "Premium Contract Audit": false
+                "Premium Contract Audit": true
             },
             "phase 2": {
                 "$5,000,000 Marketcap": false,
