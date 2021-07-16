@@ -69,6 +69,7 @@
       max-height: math.div(1000px, $aspect_ratio_widescreen);
       border: 0.6rem solid $text_color_primary;
       border-radius: 10px;
+      margin: 2rem;
     }
   }
 }

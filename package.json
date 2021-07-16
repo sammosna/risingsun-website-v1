@@ -1,7 +1,7 @@
 {
     "name": "risingsun-website",
     "description": "An informational website about the RisingSun token.",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "private": true,
     "repository": {
         "type": "git",

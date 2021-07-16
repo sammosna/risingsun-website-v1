@@ -14,7 +14,10 @@ import { getSiteLink } from '~constants';
  */
 export function TrailerSection() {
   /** The link which is being used by the trailer */
-  const trailerLink = getSiteLink('trailer');
+  const trailerLinks = [
+    getSiteLink('trailer_token'),
+    getSiteLink('trailer_nft'),
+  ];
 
   return (
     <Row component="article" className={styles.section}>
@@ -36,16 +39,18 @@ export function TrailerSection() {
         align="start"
         direction="column"
       >
-        <Section id="watch-the-trailer">
-          <h2 className={styles.title}>Watch the trailer</h2>
-          <iframe
-            className={styles.trailer}
-            src={trailerLink}
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
+        <Section id="trailers">
+          <h2 className={styles.title}>Watch our trailers!</h2>
+          {trailerLinks.map((trailerLink: string) => (
+            <iframe
+              className={styles.trailer}
+              src={trailerLink}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          ))}
         </Section>
       </Row>
     </Row>
