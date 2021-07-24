@@ -57,12 +57,12 @@
                 "Listed on CG": true,
                 "Listed on CMC": true,
                 "$1,000,000 Marketcap": false,
-                "Holder snapshots": false,
+                "Holder snapshots": true,
                 "Base Techrate Audit": true,
                 "Premium Contract Audit": true
             },
             "phase 2": {
-                "NFT Coupon System for buying RSUN tax-free": false,
+                "NFT Coupon System for buying RSUN tax-free": true,
                 "Neural Samurai Trading Cards": false,
                 "NFT Marketplace": false,
                 "Neural Samurai Trading Card Game": false,
