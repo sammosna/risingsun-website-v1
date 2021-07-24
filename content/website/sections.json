@@ -55,7 +55,7 @@
                 "Whitelisted Presale": true,
                 "Launch Token on PancakeSwap": true,
                 "Listed on CG": true,
-                "Listed on CMC": false,
+                "Listed on CMC": true,
                 "$1,000,000 Marketcap": false,
                 "Holder snapshots": false,
                 "Base Techrate Audit": true,
