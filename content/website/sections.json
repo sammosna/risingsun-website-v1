@@ -56,7 +56,7 @@
                 "Launch Token on PancakeSwap": true,
                 "Listed on CG": true,
                 "Listed on CMC": true,
-                "$1,000,000 Marketcap": false,
+                "$1,000,000 Marketcap": true,
                 "Holder snapshots": true,
                 "Base Techrate Audit": true,
                 "Premium Contract Audit": true
