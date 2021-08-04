@@ -16,28 +16,29 @@
         ]
     },
     "rewards": {
-        "id": "#holder-rewards",
-        "title": "Holder Rewards",
+        "id": "#cards",
+        "title": "Samurai Rising NFT Battle Cards",
         "items": [
             {
                 "icon": "icon_hodl.svg",
-                "title": "Holder Snapshots",
+                "title": "Battle Cards",
                 "description": [
-                    "Diamond-handed holders will get unique NFT's! Periodic holder snapshots will differentiate the strong from the weak. Stay tuned for special NFT artwork."
+                    "Limited shogun samurai recruitment battle cards (Only 5K minted)"
                 ]
             },
             {
                 "icon": "icon_reduced_tax.svg",
-                "title": "Reduced Tax",
+                "title": "Recruit Samurai",
                 "description": [
-                    "For every 2000 holders with minimum ~$10 tokens, the sell tax is reduced by 1% until the sell tax reaches 8%. The longer you hold, the better sell tax you get."
+                    "Unique ability to recruit new samurai battle cards. Only battle cards to ever exist with this ability",
+                    "Every 100 newly minted shogun cards the price increases with 4%"
                 ]
             },
             {
                 "icon": "icon_auto_liq.svg",
-                "title": "Auto Reflection",
+                "title": "Unique NFT's",
                 "description": [
-                    "2% BUSD Reflection means you lock-in gains from holding. Volume makes you only richer. The strong-willed become stronger."
+                    "Over 4 billion collectable unique samurai battle cards"
                 ]
             }
         ]
