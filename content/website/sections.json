@@ -14,7 +14,7 @@
         "title": "NFT DApp",
         "subtitle": "SamuraiRising",
         "description": [
-            "SamuraiRising is a DApp featuring collectable NFT battle cards. Forge your very own unique warriors and trade them on the marketplace. Build a grand samurai army and send it to battle. Win glory and become a samurai master!"
+            "SamuraiRising is a DApp featuring collectable NFT battle cards. Forge your very own unique warriors and trade them on the marketplace. Build a grand samurai army and send it to battle. Win glory and become a samurai master!<br>https://samurairising.app/"
         ]
     },
     "rewards": {
@@ -63,9 +63,9 @@
             },
             "phase 2": {
                 "NFT Coupon System for buying RSUN tax-free": true,
-                "Neural Samurai Trading Cards": false,
+                "Samurai Trading Cards": true,
                 "NFT Marketplace": false,
-                "Neural Samurai Trading Card Game": false,
+                "Samurai Trading Card Game": false,
                 "$5,000,000 Marketcap": false,
                 "$10,000,000 Marketcap": false,
                 "$50,000,000 Marketcap": false,
