@@ -51,7 +51,7 @@ export function AboutSection() {
           </Button>
           <Button
             variant="primary"
-            onClick={handle frozen}
+            onClick={handleNftOpen}
           >
             NFT's (new!)
           </Button>
