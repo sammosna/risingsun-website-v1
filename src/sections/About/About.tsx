@@ -27,6 +27,8 @@ export function AboutSection() {
   /** A function to handle the telegram link opening */
   const handleTelegramOpen = () => openInNewTab(getSiteLink('telegram'));
 
+  const handleNftOpen = () => openInNewTab(getSiteLink('nft'));
+
   return (
     <Section id={sectionData.id}>
       <Container className={styles.section}>
@@ -46,6 +48,12 @@ export function AboutSection() {
             onClick={handleBoggedSwapOpen}
           >
             Bogged
+          </Button>
+          <Button
+            variant="primary"
+            onClick={handle frozen}
+          >
+            NFT's (new!)
           </Button>
           <Button
             variant="telegram"
