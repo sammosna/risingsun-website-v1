@@ -2,11 +2,9 @@
     "about": {
         "id": "#about",
         "title": "RisingSun",
-        "subtitle": "Win honour, glory and fortune!",
+        "subtitle": "Recruit, Battle, Earn & Rule",
         "description": [
-            "Amid uncertainty and chaos, only the way of the warrior can triumph. In the fiery pits of the Binance Smart Chain, a token was born: RisingSun.",
-            "With a safe contract, experienced team and proven tokenomics, RisingSun has all the tenets of the bushidō code. RisingSun powers the ecosystem surrounding a novel NFT card game — SamuraiRising. The token sets itself apart from the competition by adding real value and utility to a rapidly evolving DApp that rewards players and holders alike.",
-            "Join the RisingSun nation and win honour, glory and fortune!"
+            "With over 4 billion unique Samurai battle cards, RisingSun offers the greatest play to earn ecosystem on the Binance Smart Chain. With the battle game coming soon, the possibilities are endless and the opportunities plentiful."
         ]
     },
     "engine": {
@@ -163,29 +161,18 @@
         "items": [
             {
                 "icon": "icon_buy_tax.png",
-                "title": "Buy Tax",
+                "title": "6% Buy Tax",
                 "description": [
-                    "2% BUSD Reflection",
-                    "3% Samurai Engine Buyback",
-                    "1.5% Autoliquidity (if liquidity ratio is above 20%, this is converted to buyback tax)",
-                    "1.5% Marketing"
+                    "3% BUSD reflection",
+                    "3% Game Development & Marketing"
                 ]
             },
             {
                 "icon": "icon_sell_tax.png",
-                "title": "Sell Tax",
+                "title": "12% Sell Tax",
                 "description": [
-                    "4% BUSD Reflection",
-                    "6% Samurai Engine Buyback",
-                    "3% Autoliquidity (if liquidity ratio is above 20%, this is converted to buyback tax)",
-                    "3% Marketing"
-                ]
-            },
-            {
-                "icon": "icon_samurai_engine.svg",
-                "title": "Samurai Strike",
-                "description": [
-                    "After each strike from the mighty samurai, the sell tax is increased to 24% and slowly reverts back to it's original state."
+                    "6% BUSD reflection",
+                    "6% Game Development & Marketing"
                 ]
             },
             {
