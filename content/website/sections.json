@@ -4,13 +4,13 @@
         "title": "RisingSun",
         "subtitle": "Recruit, Battle, Earn & Rule",
         "description": [
-            "With over 4 billion unique Samurai battle cards, RisingSun offers the greatest play to earn ecosystem on the Binance Smart Chain. With the battle game coming soon, the possibilities are endless and the opportunities plentiful."
+            "RisingSun powers the greatest play to earn NFT card game ecosystem on the Binance Smart Chain. Over 4 billion collectable samurai battle cards make for one of the most unique gaming experiences on blockchain. The novel NFT card game is coming soon — SamuraiRising."
         ]
     },
     "engine": {
         "id": "#samurai-rising",
-        "title": "SamuraiRising dApp",
-        "subtitle": "NFT Army",
+        "title": "SamuraiRising",
+        "subtitle": "NFT dApp",
         "description": [
             "SamuraiRising is a DApp featuring collectable NFT battle cards. Forge your very own unique warriors and trade them on the marketplace. Build a grand samurai army and send it to battle. Win glory and become a samurai master!"
         ]
@@ -23,22 +23,21 @@
                 "icon": "icon_hodl.svg",
                 "title": "Battle Cards",
                 "description": [
-                    "Limited shogun samurai recruitment battle cards (Only 5K minted)"
+                    "Limited edition shogun battle cards. Only 5000 will ever be minted!"
                 ]
             },
             {
                 "icon": "icon_reduced_tax.svg",
                 "title": "Recruit Samurai",
                 "description": [
-                    "Unique ability to recruit new samurai battle cards. Only battle cards to ever exist with this ability",
-                    "Every 100 newly minted shogun cards the price increases with 4%"
+                    "Shogun battle cards let you recruit new samurai! The price of shogun cards increases by 4% every 100 mints."
                 ]
             },
             {
                 "icon": "icon_auto_liq.svg",
-                "title": "Unique NFT's",
+                "title": "Unique NFTs",
                 "description": [
-                    "Over 4 billion collectable unique samurai battle cards"
+                    "Over 4 billion possible combinations make every samurai truly unique!"
                 ]
             }
         ]
