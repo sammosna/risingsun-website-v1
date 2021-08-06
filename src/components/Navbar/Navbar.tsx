@@ -6,6 +6,7 @@ import {
   faTelegramPlane as TelegramIcon,
   faTiktok as TikTokIcon,
   faTwitter as TwitterIcon,
+  faDiscord as DiscordIcon,
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faBars as SidebarClosedIcon,
@@ -46,12 +47,13 @@ export function Navbar({
   sidebarCloseAction,
 }: Props) {
   /** The links for the social items */
-  const [mediumLink, redditLink, telegramLink, tiktokLink, twitterLink] = [
+  const [mediumLink, redditLink, telegramLink, tiktokLink, twitterLink, discordLink] = [
     getSiteLink('medium'),
     getSiteLink('reddit'),
     getSiteLink('telegram'),
     getSiteLink('tiktok'),
     getSiteLink('twitter'),
+    getSiteLink('discord'),
   ] as const;
 
   /** If the screen is small enough to make the container fluid */
@@ -88,6 +90,11 @@ export function Navbar({
           <FontAwesomeIcon
             icon={TwitterIcon}
             onClick={() => openInNewTab(twitterLink)}
+            size={isScreenSmall ? '2x' : 'lg'}
+          />
+          <FontAwesomeIcon
+            icon={DiscordIcon}
+            onClick={() => openInNewTab(discordLink)}
             size={isScreenSmall ? '2x' : 'lg'}
           />
         </Container>
