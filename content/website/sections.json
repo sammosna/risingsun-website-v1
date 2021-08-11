@@ -23,14 +23,14 @@
                 "icon": "icon_hodl.svg",
                 "title": "Battle Cards",
                 "description": [
-                    "Limited edition shogun battle cards. Only 5000 will ever be minted!"
+                    "Limited edition battle cards. Only 5000 Generals will ever be minted!"
                 ]
             },
             {
                 "icon": "icon_reduced_tax.svg",
                 "title": "Recruit Samurai",
                 "description": [
-                    "Shogun battle cards let you recruit new samurai! The price of shogun cards increases by 4% every 100 mints."
+                    "General-tier battle cards let you recruit new samurai! The price of a General increases by 4% every 100 mints."
                 ]
             },
             {
