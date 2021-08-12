@@ -53,7 +53,7 @@ export function AboutSection() {
             variant="primary"
             onClick={handleNftOpen}
           >
-            NFT's (new!)
+            NFTs (new!)
           </Button>
           <Button
             variant="telegram"
