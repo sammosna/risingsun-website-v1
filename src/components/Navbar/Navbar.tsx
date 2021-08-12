@@ -47,7 +47,14 @@ export function Navbar({
   sidebarCloseAction,
 }: Props) {
   /** The links for the social items */
-  const [mediumLink, redditLink, telegramLink, tiktokLink, twitterLink, discordLink] = [
+  const [
+    mediumLink,
+    redditLink,
+    telegramLink,
+    tiktokLink,
+    twitterLink,
+    discordLink,
+  ] = [
     getSiteLink('medium'),
     getSiteLink('reddit'),
     getSiteLink('telegram'),
@@ -68,23 +75,8 @@ export function Navbar({
       <div className={styles.socialLinks}>
         <Container fluid={isScreenSmall}>
           <FontAwesomeIcon
-            icon={MediumIcon}
-            onClick={() => openInNewTab(mediumLink)}
-            size={isScreenSmall ? '2x' : 'lg'}
-          />
-          <FontAwesomeIcon
-            icon={RedditIcon}
-            onClick={() => openInNewTab(redditLink)}
-            size={isScreenSmall ? '2x' : 'lg'}
-          />
-          <FontAwesomeIcon
             icon={TelegramIcon}
             onClick={() => openInNewTab(telegramLink)}
-            size={isScreenSmall ? '2x' : 'lg'}
-          />
-          <FontAwesomeIcon
-            icon={TikTokIcon}
-            onClick={() => openInNewTab(tiktokLink)}
             size={isScreenSmall ? '2x' : 'lg'}
           />
           <FontAwesomeIcon
@@ -95,6 +87,21 @@ export function Navbar({
           <FontAwesomeIcon
             icon={DiscordIcon}
             onClick={() => openInNewTab(discordLink)}
+            size={isScreenSmall ? '2x' : 'lg'}
+          />
+          <FontAwesomeIcon
+            icon={RedditIcon}
+            onClick={() => openInNewTab(redditLink)}
+            size={isScreenSmall ? '2x' : 'lg'}
+          />
+          <FontAwesomeIcon
+            icon={MediumIcon}
+            onClick={() => openInNewTab(mediumLink)}
+            size={isScreenSmall ? '2x' : 'lg'}
+          />
+          <FontAwesomeIcon
+            icon={TikTokIcon}
+            onClick={() => openInNewTab(tiktokLink)}
             size={isScreenSmall ? '2x' : 'lg'}
           />
         </Container>

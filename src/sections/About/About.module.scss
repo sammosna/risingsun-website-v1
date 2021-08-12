@@ -28,8 +28,7 @@
     color: white;
     opacity: 0.5;
     font-style: italic;
-    padding-top: 0.5rem;
-    padding-bottom: 2rem;
+    padding: 0.5rem 0;
   }
 
   /// Styles for the paragraph with information
@@ -37,6 +36,11 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     color: $text_color_primary;
+
+    /// Apply padding to top item
+    :first-child {
+      margin-top: 2rem !important;
+    }
 
     /// Apply spacing to each line
     :not(:first-child) {

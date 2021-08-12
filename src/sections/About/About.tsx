@@ -50,12 +50,6 @@ export function AboutSection() {
             Bogged
           </Button>
           <Button
-            variant="primary"
-            onClick={handleNftOpen}
-          >
-            NFTs (new!)
-          </Button>
-          <Button
             variant="telegram"
             icon={telegramIcon}
             onClick={handleTelegramOpen}
@@ -64,6 +58,11 @@ export function AboutSection() {
           </Button>
         </Row>
         <div className={styles.slippage}>Set slippage to 10% when buying</div>
+        <Row justify="center" align="center" className={styles.actions}>
+          <Button variant="primary" onClick={handleNftOpen}>
+            Launch SamuraiRising DApp
+          </Button>
+        </Row>
         <span className={styles.paragraph}>
           {sectionData.description.map((line) => (
             <p key={line} className={styles.line}>
