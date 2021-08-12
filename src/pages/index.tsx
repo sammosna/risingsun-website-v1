@@ -21,7 +21,7 @@ function IndexPage() {
   return (
     <>
       <Helmet>
-        <title>RisingSun | What Falls — Must Rise Again</title>
+        <title>RisingSun | Recruit, Battle, Earn & Rule</title>
         {Object.keys(SEO).map((type: any) => (
           <meta key={type} name={type} content={getSeoValue(type)} />
         ))}
