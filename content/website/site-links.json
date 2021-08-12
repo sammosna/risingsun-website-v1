@@ -1,14 +1,15 @@
 {
     "bogged": "https://bogged.finance/swap?tokenIn=BNB&tokenOut=0x917841c010b3d86ED886F36F2C9807E07a2e3093&slippage=10",
+    "chart": "https://www.dextools.io/app/pancakeswap/pair-explorer/0xcf5db175b7e869b1e0cc05a7614acde0d2b2f480",
+    "discord": "https://discord.gg/Eg2DVrzktN",
     "medium": "https://medium.com/rising-sun",
+    "dapp": "https://samurairising.app/",
     "pancakeswap": "https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x917841c010b3d86ED886F36F2C9807E07a2e3093",
     "presale": "https://sweepwidget.com/view/26118-m4tqs9a1",
     "reddit": "https://www.reddit.com/r/RisingSunToken",
     "telegram": "https://t.me/risingsun_token",
     "tiktok": "https://vm.tiktok.com/ZMdPSEPE8",
-    "trailer_token": "https://www.youtube-nocookie.com/embed/nSQJtU4DI8s?controls=1",
     "trailer_nft": "https://www.youtube-nocookie.com/embed/yYViZ-znePo?controls=1",
-    "twitter": "https://twitter.com/risingsuntoken",
-    "nft": "https://samurairising.app/",
-    "discord": "https://discord.gg/Eg2DVrzktN"
+    "trailer_token": "https://www.youtube-nocookie.com/embed/nSQJtU4DI8s?controls=1",
+    "twitter": "https://twitter.com/risingsuntoken"
 }

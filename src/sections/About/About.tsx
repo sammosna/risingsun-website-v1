@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { faTelegramPlane as telegramIcon } from '@fortawesome/free-brands-svg-icons';
+import { faTelegramPlane as TelegramIcon } from '@fortawesome/free-brands-svg-icons';
+import { faChartBar as ChartIcon } from '@fortawesome/free-solid-svg-icons';
 import { Container, Row } from 'react-grid-system';
 
 import * as styles from './About.module.scss';
@@ -27,7 +28,11 @@ export function AboutSection() {
   /** A function to handle the telegram link opening */
   const handleTelegramOpen = () => openInNewTab(getSiteLink('telegram'));
 
-  const handleNftOpen = () => openInNewTab(getSiteLink('nft'));
+  /** A function to handle the dapp link opening */
+  const handleDAppOpen = () => openInNewTab(getSiteLink('dapp'));
+
+  /** A function to handle the chart links */
+  const handleChartOpen = () => openInNewTab(getSiteLink('chart'));
 
   return (
     <Section id={sectionData.id}>
@@ -51,15 +56,22 @@ export function AboutSection() {
           </Button>
           <Button
             variant="telegram"
-            icon={telegramIcon}
+            icon={TelegramIcon}
             onClick={handleTelegramOpen}
           >
             Telegram
           </Button>
+          <Button
+            variant="secondary"
+            icon={ChartIcon}
+            onClick={handleChartOpen}
+          >
+            Chart
+          </Button>
         </Row>
         <div className={styles.slippage}>Set slippage to 10% when buying</div>
         <Row justify="center" align="center" className={styles.actions}>
-          <Button variant="primary" onClick={handleNftOpen}>
+          <Button variant="primary" onClick={handleDAppOpen}>
             Launch SamuraiRising DApp
           </Button>
         </Row>
