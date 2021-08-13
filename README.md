@@ -7,7 +7,7 @@ The default website for the RisingSun token. This website contains information a
 
 ## Docs
 
-The documentation about the code et cetera used in this website, can be found here: https://risingsun-token.github.io/risingsun-website/
+The documentation about the code et cetera used in this website, can be found here: https://risingsun-token.github.io/risingsun-website-old/
 
 ## Installation and contributing
 
