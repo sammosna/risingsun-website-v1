@@ -25,6 +25,9 @@ export function AboutSection() {
   /** A function to handle the the bogged link opening */
   const handleBoggedSwapOpen = () => openInNewTab(getSiteLink('bogged'));
 
+  /** A function to handle the the apeswap link opening */
+  const handleApeSwapOpen = () => openInNewTab(getSiteLink('apeswap'));
+
   /** A function to handle the telegram link opening */
   const handleTelegramOpen = () => openInNewTab(getSiteLink('telegram'));
 
@@ -54,6 +57,15 @@ export function AboutSection() {
           >
             Bogged
           </Button>
+          <Button
+            variant="apeswap"
+            image="as_logo.png"
+            onClick={handleApeSwapOpen}
+          >
+            ApeSwap
+          </Button>
+        </Row>
+        <Row justify="center" align="center" className={styles.actions}>
           <Button
             variant="telegram"
             icon={TelegramIcon}

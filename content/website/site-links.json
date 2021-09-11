@@ -1,4 +1,5 @@
 {
+    "apeswap": "https://app.apeswap.finance/swap?inputCurrency=ETH&outputCurrency=0x917841c010b3d86ED886F36F2C9807E07a2e3093",
     "bogged": "https://bogged.finance/swap?tokenIn=BNB&tokenOut=0x917841c010b3d86ED886F36F2C9807E07a2e3093&slippage=10",
     "chart": "https://www.dextools.io/app/pancakeswap/pair-explorer/0xcf5db175b7e869b1e0cc05a7614acde0d2b2f480",
     "discord": "https://discord.gg/Eg2DVrzktN",

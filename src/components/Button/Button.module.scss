@@ -45,7 +45,7 @@ $button_shadow_distance: 0.3rem;
     }
   }
 
-  /// Styles for the telegram version of the button
+  /// Styles for the pancakeswap version of the button
   &.pancakeswap {
     background-color: $external_pancakeswap_color;
     @include box-shadow(
@@ -55,7 +55,7 @@ $button_shadow_distance: 0.3rem;
       get_button_shadow_color($external_pancakeswap_color)
     );
 
-    /// Hover effect for the telegram version of the button
+    /// Hover effect for the pancakeswap version of the button
     &:hover {
       @include box-shadow(
         0,
@@ -66,7 +66,7 @@ $button_shadow_distance: 0.3rem;
     }
   }
 
-  /// Styles for the telegram version of the button
+  /// Styles for the bogged version of the button
   &.bogged {
     background-color: $external_bogged_color;
     @include box-shadow(
@@ -76,13 +76,34 @@ $button_shadow_distance: 0.3rem;
       get_button_shadow_color($external_bogged_color)
     );
 
-    /// Hover effect for the telegram version of the button
+    /// Hover effect for the bogged version of the button
     &:hover {
       @include box-shadow(
         0,
         0,
         0,
         get_button_shadow_color($external_bogged_color)
+      );
+    }
+  }
+
+  /// Styles for the apeswap version of the button
+  &.apeswap {
+    background-color: $external_apeswap_color;
+    @include box-shadow(
+      0,
+      $button_shadow_distance,
+      0,
+      get_button_shadow_color($external_apeswap_color)
+    );
+
+    /// Hover effect for the apeswap version of the button
+    &:hover {
+      @include box-shadow(
+        0,
+        0,
+        0,
+        get_button_shadow_color($external_apeswap_color)
       );
     }
   }

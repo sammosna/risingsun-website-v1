@@ -14,7 +14,8 @@ type ButtonVariant =
   | 'secondary'
   | 'telegram'
   | 'bogged'
-  | 'pancakeswap';
+  | 'pancakeswap'
+  | 'apeswap';
 
 /**
  * The property types which are used by the `Button` component
@@ -56,6 +57,7 @@ export function Button({
         [styles.telegram]: variant === 'telegram',
         [styles.bogged]: variant === 'bogged',
         [styles.pancakeswap]: variant === 'pancakeswap',
+        [styles.apeswap]: variant === 'apeswap',
       })}
       onClick={onClick}
     >
