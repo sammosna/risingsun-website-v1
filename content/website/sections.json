@@ -56,7 +56,7 @@
                 "Base Techrate Audit": true,
                 "Premium Contract Audit": true,
                 "15% of token burned": true,
-                "$1,000,000 Marketcap": true,
+                "$1,000,000 Marketcap": true
             },
             "August 2021": {
                 "Samurai Battle Card NFTs": true,
@@ -68,7 +68,7 @@
                 "Binance MVB-iii contest submission": true,
                 "Biography and Nickname Samurai Cards": true,
                 "NFT $BUSD reflection": true,
-                "$5,000,000 Marketcap": true,
+                "$5,000,000 Marketcap": true
             },
             "September 2021": {
                 "CEX listing on ZT Global": true,
@@ -85,7 +85,7 @@
                 "Partner Sponsorship Game Tournement": false,
                 "Samurai Card Sponsorship/Loan System": false,
                 "SamuraiRising Referral System": false,
-                "$50,000,000 Marketcap": false,
+                "$50,000,000 Marketcap": false
             },
             "October 2021": {
                 "Major Website Redesign and Integrations": false,
@@ -95,8 +95,7 @@
                 "Spell Cards and Deck Building": false,
                 "SamuraiRising V2": false,
                 "Clan Wars and Ranked Matches": false,
-                "Spell Cards and Deck Building": false,
-                "$100,000,000 Marketcap": false,
+                "$100,000,000 Marketcap": false
             },
             "November 2021": {
                 "Samurai Card Retirement & Burning": false,
@@ -104,15 +103,15 @@
                 "Battle Companion/Animal Breeding": false,
                 "Land Structure, Buildings and Defences": false,
                 "Land Capture and Raiding": false,
-                "$200,000,000 Marketcap": false,
+                "$200,000,000 Marketcap": false
             },
             "December 2021": {
                 "Samurai Hero Skill-trees and XP System": false,
                 "Weapons and Armour crafting": false,
                 "SamuraiRising V3": false,
                 "Narrative-Based War Month-Long Event": false,
-                "$500,000,000 Marketcap": false,
-            },
+                "$500,000,000 Marketcap": false
+            }
         }
     },
     "team": {
