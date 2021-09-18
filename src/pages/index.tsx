@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import { Jumbotron } from '~components';
 import { getSeoValue, SEO } from '~constants';
 import {
+  FooterSection,
   InfoSection,
   RoadmapSection,
   TeamSection,
@@ -33,6 +34,7 @@ function IndexPage() {
       <TrailerSection />
       <RoadmapSection />
       <TeamSection />
+      <FooterSection />
     </>
   );
 }

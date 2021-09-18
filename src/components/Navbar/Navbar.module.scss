@@ -67,7 +67,12 @@
 
         /// Styles for each link item
         .linkItem {
-          margin: 0 1rem;
+          margin: 0 0.5rem;
+
+          /// Styles for the link item ref
+          a {
+            font-size: 1rem !important;
+          }
 
           /// Change link color on link item hover
           &:hover {

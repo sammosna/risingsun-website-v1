@@ -1,0 +1,73 @@
+@import '../../styles/variables', '../../styles/util';
+
+/// Styles for the section
+.section {
+  background-color: #323441;
+  padding-top: 2%;
+  width: 100%;
+  @include mx-clear;
+
+  /// Styles for the landscape
+  .landscape {
+    width: 100%;
+    position: absolute;
+    align-items: flex-start;
+    @include transform(translateY(-3.4vw));
+    @include mx-clear;
+
+    /// Styles for the mountain
+    .mountain {
+      width: 100%;
+    }
+  }
+
+  /// Styles for the footer content
+  .content {
+    width: 100%;
+    padding-bottom: 5rem;
+    @include mx-clear;
+
+    /// Styles for the footer container
+    .container {
+      width: 100% !important;
+
+      /// Styles for each footer heading
+      h2 {
+        font-size: 2rem !important;
+        color: $text_color_primary;
+        text-align: center;
+      }
+
+      /// Styles for each contract item
+      .contractItem {
+        text-align: center;
+        margin-top: 10px;
+
+        /// Styles for the copy icon
+        .icon {
+          cursor: pointer;
+          margin-left: 5px;
+        }
+
+        /// Styles for the contract heading
+        h4 {
+          color: white;
+          opacity: 0.7;
+        }
+
+        /// Styles for the contract
+        p {
+          color: white;
+        }
+      }
+
+      /// Styles for the footer row
+      .row {
+        /// Styles for the footer column
+        .col {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
