@@ -81,20 +81,22 @@
                 "$INF Airdrops for Samurai Holders": true,
                 "RisingSun Governance Voting": true,
                 "SamuraiRising V1 Play-to-Earn game": true,
-                "Partner Sponsorship Game Tournament": false,
-                "Samurai Card Sponsorship/Loan System": false,
-                "SamuraiRising Referral System": false,
-                "$50,000,000 Marketcap": false
+                "Samurai Card Sponsorship/Loan System": true,
+                "$RSUN Single Staking": false,
+
             },
             "October 2021": {
                 "Major Website Redesign and Integrations": false,
+                "Samurai Card Decentralized Sponsorship/Loan System": true,
+                "SamuraiRising Referral System": false,
+                "Partner Sponsorship Game Tournament": false,
                 "Limited Edition Samurai Packs": false,
                 "Land NFTs for Resources": false,
                 "Land Generated Resources": false,
                 "Spell Cards and Deck Building": false,
                 "SamuraiRising V2": false,
                 "Clan Wars and Ranked Matches": false,
-                "$100,000,000 Marketcap": false
+                "$50,000,000 Marketcap": false
             },
             "November 2021": {
                 "Samurai Card Retirement & Burning": false,
@@ -198,18 +200,18 @@
         "items": [
             {
                 "icon": "icon_buy_tax.png",
-                "title": "6% Buy Tax",
+                "title": "3% Buy Tax",
                 "description": [
-                    "3% BUSD reflection",
-                    "3% Game Development & Marketing"
+                    "1% BUSD reflection",
+                    "2% Game Development & Marketing"
                 ]
             },
             {
                 "icon": "icon_sell_tax.png",
-                "title": "12% Sell Tax",
+                "title": "6% Sell Tax",
                 "description": [
-                    "6% BUSD reflection",
-                    "6% Game Development & Marketing"
+                    "2% BUSD reflection",
+                    "4% Game Development & Marketing"
                 ]
             },
             {
