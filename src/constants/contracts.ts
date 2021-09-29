@@ -28,4 +28,8 @@ export const CONTRACTS: Array<{
     name: 'Mysterious Crates',
     address: '0xbeE7a5a2FE488B38C05e1ccd4815e3447C7eB015',
   },
+  {
+    name: 'Land Crates',
+    address: '0x56Bc09B7aCBf8C1376a564f0e0AB9c77782d037d',
+  },
 ];
