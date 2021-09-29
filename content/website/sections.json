@@ -1,226 +1,225 @@
 {
     "about": {
-        "id": "#about",
-        "title": "RisingSun",
-        "subtitle": "Recruit, Battle, Earn & Rule",
         "description": [
             "RisingSun powers the greatest play to earn NFT card game ecosystem on the Binance Smart Chain. Over 4 billion collectable samurai battle cards make for one of the most unique gaming experiences on blockchain. The novel NFT card game is coming soon — SamuraiRising."
-        ]
+        ],
+        "id": "#about",
+        "subtitle": "Recruit, Battle, Earn & Rule",
+        "title": "RisingSun"
     },
     "engine": {
-        "id": "#samurai-rising",
-        "title": "SamuraiRising",
-        "subtitle": "NFT DApp",
         "description": [
             "SamuraiRising is a DApp featuring collectable NFT battle cards. Forge your very own unique warriors and trade them on the marketplace. Build a grand samurai army and send it to battle. Win glory and become a samurai master!"
-        ]
+        ],
+        "id": "#samurai-rising",
+        "subtitle": "NFT DApp",
+        "title": "SamuraiRising"
     },
     "rewards": {
         "id": "#cards",
-        "title": "SamuraiRising NFT Battle Cards",
         "items": [
             {
-                "icon": "icon_hodl.svg",
-                "title": "Battle Cards",
                 "description": [
                     "Limited edition battle cards. Only 5000 Generals will ever be minted!"
-                ]
+                ],
+                "icon": "icon_hodl.svg",
+                "title": "Battle Cards"
             },
             {
-                "icon": "icon_reduced_tax.svg",
-                "title": "Recruit Samurai",
                 "description": [
                     "General-tier battle cards let you recruit new samurai! The price of a General increases by 4% every 100 mints."
-                ]
+                ],
+                "icon": "icon_reduced_tax.svg",
+                "title": "Recruit Samurai"
             },
             {
-                "icon": "icon_auto_liq.svg",
-                "title": "Unique NFTs",
                 "description": [
                     "Over 3 trillion possible combinations make every samurai truly unique!"
-                ]
+                ],
+                "icon": "icon_auto_liq.svg",
+                "title": "Unique NFTs"
             }
-        ]
+        ],
+        "title": "SamuraiRising NFT Battle Cards"
     },
     "roadmap": {
-        "id": "#roadmap",
-        "title": "Roadmap to $500M Marketcap",
         "columns": {
+            "August 2021": {
+                "$2,000,000 in game rewards wallet": true,
+                "$5,000,000 Marketcap": true,
+                "20% daily market cap growth": true,
+                "5000 General Samurai Cards Minted": true,
+                "Binance MVB-iii contest submission": true,
+                "Biography and Nickname Samurai Cards": true,
+                "External NFT Marketplaces": true,
+                "NFT $BUSD reflection": true,
+                "Samurai Battle Card NFTs": true,
+                "SatoshiStreetBets AMA": true
+            },
+            "December 2021": {
+                "$500,000,000 Marketcap": false,
+                "Narrative-Based War Month-Long Event": false,
+                "Samurai Card Strengh Stats Re-Roll": false,
+                "Samurai Hero Skill-trees and XP System": false,
+                "SamuraiRising V3": false,
+                "Weapons and Armour crafting": false
+            },
             "July 2021": {
-                "Presale Whitelist Contest": true,
-                "Telegram with 5000 Members": true,
-                "Whitelisted Presale": true,
+                "$1,000,000 Marketcap": true,
+                "15% of token burned": true,
+                "Base Techrate Audit": true,
                 "Launch Token on PancakeSwap": true,
                 "Listed on CG": true,
                 "Listed on CMC": true,
-                "Base Techrate Audit": true,
                 "Premium Contract Audit": true,
-                "15% of token burned": true,
-                "$1,000,000 Marketcap": true
-            },
-            "August 2021": {
-                "Samurai Battle Card NFTs": true,
-                "$2,000,000 in game rewards wallet": true,
-                "20% daily market cap growth": true,
-                "5000 General Samurai Cards Minted": true,
-                "External NFT Marketplaces": true,
-                "SatoshiStreetBets AMA": true,
-                "Binance MVB-iii contest submission": true,
-                "Biography and Nickname Samurai Cards": true,
-                "NFT $BUSD reflection": true,
-                "$5,000,000 Marketcap": true
-            },
-            "September 2021": {
-                "CEX listing on ZT Global": true,
-                "Internal NFT Marketplace": true,
-                "Samurai Recruitment Started": true,
-                "Mystery Samurai Gacha Crates": true,
-                "Influencer & Streamer partnerships": true,
-                "$RSUN LP Staking at Apeswap": true,
-                "$INF Game Rewards Token launched": true,
-                "$INF Airdrops for Samurai Holders": true,
-                "RisingSun Governance Voting": true,
-                "SamuraiRising V1 Play-to-Earn game": true,
-                "Samurai Card Sponsorship/Loan System": true,
-                "$RSUN Single Staking": false,
-
-            },
-            "October 2021": {
-                "Major Website Redesign and Integrations": false,
-                "Samurai Card Decentralized Sponsorship/Loan System": true,
-                "SamuraiRising Referral System": false,
-                "Partner Sponsorship Game Tournament": false,
-                "Limited Edition Samurai Packs": false,
-                "Land NFTs for Resources": false,
-                "Land Generated Resources": false,
-                "Spell Cards and Deck Building": false,
-                "SamuraiRising V2": false,
-                "Clan Wars and Ranked Matches": false,
-                "$50,000,000 Marketcap": false
+                "Presale Whitelist Contest": true,
+                "Telegram with 5000 Members": true,
+                "Whitelisted Presale": true
             },
             "November 2021": {
-                "Samurai Card Retirement & Burning": false,
-                "Land NFTs for Farming": false,
+                "$200,000,000 Marketcap": false,
                 "Battle Companion/Animal Breeding": false,
-                "Land Structure, Buildings and Defences": false,
                 "Land Capture and Raiding": false,
-                "$200,000,000 Marketcap": false
+                "Land NFTs for Farming": false,
+                "Land Structure, Buildings and Defences": false,
+                "Samurai Card Retirement & Burning": false
             },
-            "December 2021": {
-                "Samurai Hero Skill-trees and XP System": false,
-                "Samurai Card Strengh Stats Re-Roll": false,
-                "Weapons and Armour crafting": false,
-                "SamuraiRising V3": false,
-                "Narrative-Based War Month-Long Event": false,
-                "$500,000,000 Marketcap": false
+            "October 2021": {
+                "$50,000,000 Marketcap": false,
+                "Clan Wars and Ranked Matches": false,
+                "Land Generated Resources": false,
+                "Land NFTs for Resources": false,
+                "Limited Edition Samurai Packs": false,
+                "Major Website Redesign and Integrations": false,
+                "Partner Sponsorship Game Tournament": false,
+                "Samurai Card Decentralized Sponsorship/Loan System": true,
+                "SamuraiRising Referral System": false,
+                "SamuraiRising V2": false,
+                "Spell Cards and Deck Building": false
+            },
+            "September 2021": {
+                "$INF Airdrops for Samurai Holders": true,
+                "$INF Game Rewards Token launched": true,
+                "$RSUN LP Staking at Apeswap": true,
+                "$RSUN Single Staking": false,
+                "CEX listing on ZT Global": true,
+                "Influencer & Streamer partnerships": true,
+                "Internal NFT Marketplace": true,
+                "Mystery Samurai Gacha Crates": true,
+                "RisingSun Governance Voting": true,
+                "Samurai Card Sponsorship/Loan System": true,
+                "Samurai Recruitment Started": true,
+                "SamuraiRising V1 Play-to-Earn game": true
             }
-        }
+        },
+        "id": "#roadmap",
+        "title": "Roadmap to $500M Marketcap"
     },
     "team": {
         "id": "#team",
-        "title": "Meet The Team",
         "items": [
             {
-                "icon": "team_avatar_3.png",
-                "title": "David",
-                "subtitle": "Founder, Engineer",
                 "description": [
                     "Full-time software engineer, part-time shōgun. With five years of experience at Amazon working on core libraries and AWS, there’s a good chance you interact with his code on a daily basis. Contributing to the structure of the modern internet got a little stale for David, so he dipped his toes into the next big thing: blockchain. After founding Blowfish to build DApps for fun, he came up with Rising Sun to put the latest and greatest tokenomics in the space into action."
-                ]
+                ],
+                "icon": "team_avatar_3.png",
+                "subtitle": "Founder, Engineer",
+                "title": "David"
             },
             {
-                "icon": "team_avatar_4.png",
-                "title": "Lat",
-                "subtitle": "Lead Developer",
                 "description": [
                     "A noble daimyo, and an even better full-stack developer. Innovation, open-mindedness, and honor are some of his strong suits. With more than ten years of programming experience, Lat has mastered the arts of front and back-end development. In search of a quest for glory, he set out into the emergent world of blockchain to make a name for himself. After building DApps for notable projects like Blowfish and Bingus, he accepted the Rising Sun nation’s call to arms."
-                ]
+                ],
+                "icon": "team_avatar_4.png",
+                "subtitle": "Lead Developer",
+                "title": "Lat"
             },
             {
-                "icon": "team_avatar_2.png",
-                "title": "Thijmen",
-                "subtitle": "Full-stack Developer",
                 "description": [
                     "Passionate about bushidō and even more passionate about code. As an ashigaru and full-stack developer, Thijmen prides himself on his attention to detail. After starting to code at 14 years old, he set out on his journey to full-stack perfection. With code as disciplined as a samurai, he’s ready to make his mark in crypto. He joined the Rising Sun team in his quest to expand his knowledge and explore Web 3.0 and its possibilities."
-                ]
+                ],
+                "icon": "team_avatar_2.png",
+                "subtitle": "Full-stack Developer",
+                "title": "Thijmen"
             },
             {
-                "icon": "team_avatar_7.png",
-                "title": "K",
-                "subtitle": "Designer",
                 "description": [
                     "A samurai and motion designer that bows to no man. Wandering between clients such as HSBC, Pfizer, and Samsung for ten years has made him a master of his trade. K found a stark but welcome contrast between the corporate and crypto worlds and began delving deeper into the latter. He got involved with Blowfish on a freelance basis and decided to stick around for the promising team. After hearing about Rising Sun, K was sure of its potential and became responsible for the project’s aesthetic vision."
-                ]
+                ],
+                "icon": "team_avatar_7.png",
+                "subtitle": "Designer",
+                "title": "K"
             },
             {
-                "icon": "team_avatar_0.png",
-                "title": "Yannic",
-                "subtitle": "Analyst",
                 "description": [
                     "Developer, designer, scholar, warrior. Yannic is a real rōnin of all trades. With years of experience in coding, graphic design, and medical research, he’s got what it takes to bring honor to Rising Sun. In need of his own quest, Yannic scoured the lands in search of glory. He gave up his life as a wanderer and swore allegiance to our glorious nation after being impressed by Rising Sun’s team and core concepts."
-                ]
+                ],
+                "icon": "team_avatar_0.png",
+                "subtitle": "Analyst",
+                "title": "Yannic"
             },
             {
-                "icon": "team_avatar_5.png",
-                "title": "Freddy",
-                "subtitle": "Writer",
                 "description": [
                     "A bold sōhei that favors a pen over a katana. Years of experience as a writer have made Freddy a master of the literary arts. After honing his skills in the scientific and creative fields, he made a start in the chaotic world of cryptocurrency. Roaming through the scorched wastes of the Binance Smart Chain sharpened his wits and hardened his spirit. He offered his skills to the shōgun of Rising Sun and now serves with honor as the nation’s top scribe."
-                ]
+                ],
+                "icon": "team_avatar_5.png",
+                "subtitle": "Writer",
+                "title": "Freddy"
             },
             {
-                "icon": "team_avatar_1.png",
-                "title": "Gabriele",
-                "subtitle": "Marketing Manager",
                 "description": [
                     "An inquisitive ikkō-ikki always on the search for new horizons. For Gabriele, it’s knowledge or seppuku. In his eagerness for new adventures, he developed a passion for finance and technology. His experience in the engineering field has made him one of our top brains. Gabriele’s thirst for wisdom landed him on the Blowfish team and after hearing of an exciting new project, he pledged allegiance to Rising Sun. As a pillar of the community, he’ll be making sure the sun always shines on our glorious nation."
-                ]
+                ],
+                "icon": "team_avatar_1.png",
+                "subtitle": "Marketing Manager",
+                "title": "Gabriele"
             },
             {
-                "icon": "team_avatar_8.png",
-                "title": "Palu",
-                "subtitle": "Community Manager",
                 "description": [
                     "Our resident ninja. As a loyal agent of the shōgun, Palu makes himself known when necessary. He’s a computer science student and financial market enthusiast, making him one of the brains behind Rising Sun. Creeping through the depths of the Binance Smart Chain has made him a veteran of the scene. After serving Blowfish with distinction, he honored our call to arms. He now serves the Rising Sun nation, bringing technical wisdom and innovative marketing strategies to the table."
-                ]
+                ],
+                "icon": "team_avatar_8.png",
+                "subtitle": "Community Manager",
+                "title": "Palu"
             },
             {
-                "icon": "team_avatar_6.png",
-                "title": "Penguin King",
-                "subtitle": "Education Manager",
                 "description": [
                     "High school teacher by day, tsukai-ban by night. Penguin King was hand-picked by the emperor of Rising Sun for his ability to break down tough crypto concepts to newcomers. The perplexing world of cryptocurrency made him want to put his knowledge to the test. Intrigued by Rising Sun’s intricate tokenomics, he embarked on a quest for glory. He now serves honorably by offering his skills up in service to the Rising Sun nation."
-                ]
+                ],
+                "icon": "team_avatar_6.png",
+                "subtitle": "Education Manager",
+                "title": "Penguin King"
             }
-        ]
+        ],
+        "title": "Meet The Team"
     },
     "tokenomics": {
         "id": "#tokenomics",
-        "title": "Tokenomics",
         "items": [
             {
-                "icon": "icon_buy_tax.png",
-                "title": "3% Buy Tax",
                 "description": [
                     "1% BUSD reflection",
                     "2% Game Development & Marketing"
-                ]
+                ],
+                "icon": "icon_buy_tax.png",
+                "title": "3% Buy Tax"
             },
             {
-                "icon": "icon_sell_tax.png",
-                "title": "6% Sell Tax",
                 "description": [
                     "2% BUSD reflection",
                     "4% Game Development & Marketing"
-                ]
+                ],
+                "icon": "icon_sell_tax.png",
+                "title": "6% Sell Tax"
             },
             {
-                "icon": "icon_wallet.svg",
-                "title": "Team Wallet",
                 "description": [
                     "Used to fund marketing and development. Locked securely in a contract and vested responsibly for the good of the RisingSun nation."
-                ]
+                ],
+                "icon": "icon_wallet.svg",
+                "title": "Team Wallet"
             }
-        ]
+        ],
+        "title": "Tokenomics"
     }
 }
