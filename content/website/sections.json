@@ -198,7 +198,7 @@
         "title": "Tokenomics",
         "items": [
             {
-                "icon": "icon_buy_tax.svg",
+                "icon": "icon_buy_tax.png",
                 "title": "3% Buy Tax",
                 "description": [
                     "1% BUSD reflection",
@@ -206,7 +206,7 @@
                 ]
             },
             {
-                "icon": "icon_sell_tax.svg",
+                "icon": "icon_sell_tax.png",
                 "title": "6% Sell Tax",
                 "description": [
                     "2% BUSD reflection",
