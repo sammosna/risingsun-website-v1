@@ -81,7 +81,7 @@ export function AboutSection() {
             Chart
           </Button>
         </Row>
-        <div className={styles.slippage}>Set slippage to 8% when buying</div>
+        <div className={styles.slippage}>Set slippage to 3 ~ 4% when buying</div>
         <Row justify="center" align="center" className={styles.actions}>
           <Button variant="primary" onClick={handleDAppOpen}>
             Launch SamuraiRising DApp
