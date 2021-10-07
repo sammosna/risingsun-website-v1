@@ -201,7 +201,7 @@
                 "icon": "icon_buy_tax.png",
                 "title": "3% Buy Tax",
                 "description": [
-                    "1% BUSD reflection",
+                    "1% NFT BUSD reflection",
                     "2% Game Development & Marketing"
                 ]
             },
@@ -209,7 +209,7 @@
                 "icon": "icon_sell_tax.png",
                 "title": "6% Sell Tax",
                 "description": [
-                    "2% BUSD reflection",
+                    "2% NFT BUSD reflection",
                     "4% Game Development & Marketing"
                 ]
             },
