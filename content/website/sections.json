@@ -85,33 +85,41 @@
                 "$RSUN Single Staking": true
             },
             "October 2021": {
-                "Major Website Redesign and Integrations": false,
-                "Samurai Card Decentralized Sponsorship/Loan System": true,
-                "SamuraiRising Referral System": false,
-                "Partner Sponsorship Game Tournament": false,
-                "Limited Edition Samurai Packs": false,
-                "Land NFTs for Resources": false,
-                "Land Generated Resources": false,
-                "Spell Cards and Deck Building": false,
-                "SamuraiRising V2": false,
-                "Clan Wars and Ranked Matches": false,
-                "$50,000,000 Marketcap": false
+                "Samurai Card Scholarship System": true,
+                "SamuraiRising Matchmaking": true,
+                "SamuraiRising Tier Scaled Game Rewards": true,
+                "SamuraiRising Game-Planner DApp": true,
+                "Reduced $RSUN Buy & Sell Tax": true,
+                "Land NFT Crates": true,
+                "Bring Burned $RSUN Supply to 20%": true,
+                "Major Halloween Play-to-Earn Event": false,
+                "Limited Edition Samurai Crates": false,
+                "Land Crate Opening": false,
+                "SamuraiRising Major Update": false,
+                "New Game Reward System": false,
+                "New General NFT Utility": false,
+                "Tracker Dashboard V2": false,
+                "$20,000,000 Marketcap": false
             },
             "November 2021": {
+                "$INF Utility Shop": false,
+                "Clan Wars and Ranked Matches": false,
+                "Major Website Redesign and Integrations": false,
                 "Samurai Card Retirement & Burning": false,
-                "Land NFTs for Farming": false,
+                "Land Resource Generation": false,
+                "Monk, Ranger, Ninja and Daimyo Classes": false,
                 "Battle Companion/Animal Breeding": false,
-                "Land Structure, Buildings and Defences": false,
-                "Land Capture and Raiding": false,
-                "$200,000,000 Marketcap": false
+                "Land Structures and Buildings": false,
+                "Rise of The Shogun Play-to-Earn Game": false,
+                "$50,000,000 Marketcap": false
             },
             "December 2021": {
-                "Samurai Hero Skill-trees and XP System": false,
-                "Samurai Card Strengh Stats Re-Roll": false,
+                "Samurai Daimyo Skill-trees and XP System": false,
                 "Weapons and Armour crafting": false,
                 "SamuraiRising V3": false,
                 "Narrative-Based War Month-Long Event": false,
-                "$500,000,000 Marketcap": false
+                "Land Capture and Raiding": false,
+                "$200,000,000 Marketcap": false
             }
         }
     },
