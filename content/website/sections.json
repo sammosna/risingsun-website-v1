@@ -92,13 +92,13 @@
                 "Reduced $RSUN Buy & Sell Tax": true,
                 "Land NFT Crates": true,
                 "Bring Burned $RSUN Supply to 20%": true,
-                "Major Halloween Play-to-Earn Event": false,
+                "Major Halloween Play-to-Earn Event": true,
                 "Limited Edition Samurai Crates": false,
-                "Land Crate Opening": false,
+                "Land Crate Opening": true,
                 "SamuraiRising Major Update": false,
                 "New Game Reward System": false,
                 "New General NFT Utility": false,
-                "Tracker Dashboard V2": false,
+                "Tracker Dashboard V2": true,
                 "$20,000,000 Marketcap": false
             },
             "November 2021": {
