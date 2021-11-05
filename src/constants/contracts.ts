@@ -32,4 +32,8 @@ export const CONTRACTS: Array<{
     name: 'Land Crates',
     address: '0x56Bc09B7aCBf8C1376a564f0e0AB9c77782d037d',
   },
+  {
+    name: 'Samurai Lands',
+    address: '0x21Dc6714c4a3fccD67f53453b46e1c892A54C8E7',
+  },
 ];
